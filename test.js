@@ -47,9 +47,9 @@ function testDivide() {
 
 var successes = 0;
 var failures = 0;
-if(testAdd() === false) {failures ++;} else {successes ++;}
-if(testSubtract() === false) {failures ++;} else {successes ++;}
-if(testMultiply() === false) {failures ++;} else {successes ++;}
-if(testDivide() === false) {failures ++;} else {successes ++;}
+if(testAdd() === true) {successes ++;} else {failures ++;}
+if(testSubtract() === true) {successes ++;} else {failures ++;}
+if(testMultiply() === true) {successes ++;} else {failures ++;}
+if(testDivide() === true) {successes ++;} else {failures ++;}
 document.getElementById('results').textContent = 'Passed ' + successes + ' tests. Failed ' + failures + '.';
   
