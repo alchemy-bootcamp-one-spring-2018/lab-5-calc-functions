@@ -56,6 +56,7 @@ function doRemainder() {
 function doOddOrEven() {
     var [x, y] = storeInput();
     if(isNaN(x) === false && isNaN(y) === false) {
-        const result = OddOrEven(x, y);
+        const result = oddOrEven(x, y);
         printResult(result);
+    }
 }

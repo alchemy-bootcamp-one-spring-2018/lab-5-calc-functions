@@ -1,4 +1,4 @@
-/* exported addition, subtraction, multiplication, division, remainder, isOdd, isEven, primeNumbers */
+/* exported addition, subtraction, multiplication, division, remainder, OddOrEven, primeNumber */
 'use strict';
 
 function addition(x, y) {
@@ -26,6 +26,12 @@ function multiplication(x, y) {
 }
 
 function division(x, y) {
+    if(y === 0) {
+        return {
+            value: 'error',
+            description: 'Cannot divide by 0'
+        };
+    }
     const result = x / y;
     return {
         value: result,
@@ -34,6 +40,12 @@ function division(x, y) {
 }
 
 function remainder(x, y) {
+    if(y === 0) {
+        return {
+            value: 'error',
+            description: 'Cannot divide by 0'
+        };
+    }
     const result = x % y;
     return {
         value: result,
@@ -41,8 +53,58 @@ function remainder(x, y) {
     };
 }
 
-function isOdd(x, y) {
-    if(remainder(x, y) === 0) {
-        console.log('');
+function oddOrEven(x, y) {
+    var xResult, yResult;
+    if(x === 0) {
+        xResult = 'x is neither odd nor even. ';
+    }
+    else if(x % 2 === 0) {
+        xResult = 'x is even. ';
+    }
+    else {
+        xResult = 'x is odd. ';
+    }
+    if(y === 0) {
+        yResult = 'y is neither odd nor even.';
+    }
+    else if(y % 2 === 0) {
+        yResult = 'y is even.';
+    }
+    else {
+        yResult = 'y is odd.';
+    }
+    return {
+        description: xResult + yResult
+    };
+}
+
+function primeNumber(x) {
+    if(x < 2) {
+        return {
+            value: false,
+            description: 'x is not a prime number.'
+        };
+    }
+    else if(Number.isInteger(x) === false) {
+        return {
+            value: false,
+            description: 'x is not a prime number.'
+        };
+    }
+    else {
+        for(var i = 2; i <= x; i++) {
+            if(i === x) {
+                return {
+                    value: true,
+                    description: 'x is a prime number.'
+                };
+            }
+            else if(x % i === 0) {
+                return {
+                    value: false,
+                    description: 'x is not a prime number.'
+                };
+            }
+        }
     }
 }
