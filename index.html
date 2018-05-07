@@ -6,26 +6,31 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <h1 id = "test">Test Driven</h1>
+    <h1 id="test">Test Driven</h1>
     <body>
-        <!-- <div id = "instructions">Press a button to run your function!> </div> -->
-
         <section>
-            <div id = "istruction-button">
+            <div id="instruction-button">
                 <h3>Press a button to run your function!</h3>
             </div>
-            Number:
-            <input type="text" id="number-input">
-            by:
-            <input type="text" id="number-input">
-
-
+            <div id="boxes">
+                Number:
+                <input type="text" id="number-static">
+                by:
+                <input type="text" id="number-actor">
+            </div>
         </section>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
+        <section>
+            <div id="buttons">
+                <button id="add">Add</button>
+                <button id="add">Subtract</button>
+                <button id="add">Multiply</button>
+                <button id="add">Divide</button>
+            </div>
+        </section>
         
         <script src="calc.js"></script>
         <script src="test.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
