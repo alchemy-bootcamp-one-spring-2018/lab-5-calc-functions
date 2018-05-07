@@ -1,5 +1,5 @@
-/* exported doAddition doSubtraction doMultiplication doDivision*/
-/* globals add subtract multiply divide */
+/* exported doAddition doSubtraction doMultiplication doDivision doDivisionWithRemainder*/
+/* globals add subtract multiply divide divideWithRemainder*/
 
 function doAddition() {
     var num1 = Number(document.getElementById('add1').value);
@@ -28,12 +28,15 @@ function doMultiplication() {
 function doDivision() {
     var num1 = Number(document.getElementById('divide1').value);
     var num2 = Number(document.getElementById('divide2').value);
-    if(num2 === 0) {
-        document.getElementById('divideDescription').textContent = 'Division by zero is undefined.';
-        document.getElementById('divideResult').textContent = 'undefined';
-        return;
-    }
     var result = divide(num1, num2);
+    document.getElementById('divideResult').textContent = result.value;
+    document.getElementById('divideDescription').textContent = result.description;
+}
+
+function doDivisionWithRemainder() {
+    var num1 = Number(document.getElementById('divide1').value);
+    var num2 = Number(document.getElementById('divide2').value);
+    var result = divideWithRemainder(num1, num2);
     document.getElementById('divideResult').textContent = result.value;
     document.getElementById('divideDescription').textContent = result.description;
 }

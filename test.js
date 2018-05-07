@@ -1,5 +1,5 @@
 // tests calculation functions
-/* globals add, subtract, multiply, divide */
+/* globals add, subtract, multiply, divide, divideWithRemainder */
 
 function testAdd() {
     const result = add(8, 30);
@@ -35,13 +35,54 @@ function testMultiply() {
 }
 
 function testDivide() {
-    const result = divide(30, 5);
+    var failure = false;
+    // test for normal division
+    var result = divide(30, 5);
     if(result.value !== 6) {
         console.log('testDivide - value - FAIL', result.value);
-        return false;
+        failure = true;
     } else {
         console.log('testDivide - value - SUCCESS');
+    }
+    // test for division by zero
+    result = divide (20, 0);
+    if(result.value !== 'undefined') {
+        console.log ('testDivide - divide by zero - FAIL', result.value);
+        failure = true;
+    } else {
+        console.log('testDivide - divide by zero - SUCCESS');
+    }
+    // if any test was failed, return false
+    if(failure === false) {
         return true;
+    } else {
+        return false;
+    }
+}
+
+function testDivideWithRemainder() {
+    var failure = false;
+    // test for normal division
+    var result = divideWithRemainder(30, 4);
+    if(result.value !== '7 remainder 2') {
+        console.log('testDivide - value - FAIL', result.value);
+        failure = true;
+    } else {
+        console.log('testDivide - value - SUCCESS');
+    }
+    // test for division by zero
+    result = divide (20, 0);
+    if(result.value !== 'undefined') {
+        console.log ('testDivide - divide by zero - FAIL', result.value);
+        failure = true;
+    } else {
+        console.log('testDivide - divide by zero - SUCCESS');
+    }
+    // if any test was failed, return false
+    if(failure === false) {
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -51,5 +92,6 @@ if(testAdd() === true) {successes ++;} else {failures ++;}
 if(testSubtract() === true) {successes ++;} else {failures ++;}
 if(testMultiply() === true) {successes ++;} else {failures ++;}
 if(testDivide() === true) {successes ++;} else {failures ++;}
+if(testDivideWithRemainder() === true) {successes ++;} else {failures ++;}
 document.getElementById('results').textContent = 'Passed ' + successes + ' tests. Failed ' + failures + '.';
   
