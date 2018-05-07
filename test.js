@@ -43,3 +43,14 @@ function testDivide(){
 }
 
 testDivide();
+
+function testHypot(){
+    var result = hypotNumbers(3, 4);
+    if(result.value !== 25){
+        console.error('hypotenuse test - FAILED', result.value);
+    } else {
+        console.log('hypotenuse test - SUCCESS', result.value);
+    }
+}
+
+testHypot();

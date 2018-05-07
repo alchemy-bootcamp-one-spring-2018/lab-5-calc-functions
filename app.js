@@ -32,4 +32,14 @@ function showQuotient() {
     var y = parseInt(document.getElementById('divisor').value);
     var result = divideNumbers(x, y);
     document.getElementById('quotient').textContent = result.value;
+    if(y === 0){
+        document.getElementById('quotient').textContent = 'Error, division by 0 not possible. Please enter a valid divisor';
+    }
+}
+
+function showHypot() {
+    var x = parseInt(document.getElementById('first-leg').value);
+    var y = parseInt(document.getElementById('second-leg').value);
+    var result = hypotNumbers(x, y);
+    document.getElementById('hypotenuse').textContent = result.value;
 }

@@ -32,6 +32,13 @@ function divideNumbers(x, y){
     };
 }
 
+function hypotNumbers(x, y){
+    var hypotenuse = (x * x) + (y * y);
+    return {
+        value: hypotenuse
+    }
+}
+
 
 
 // function remainder(x, y) {
