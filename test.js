@@ -1,9 +1,9 @@
-/* globals modulus add subtract multiply divide */
+/* globals remainder add subtract multiply divide */
 /* exported testRemainder addition subtraction multiplication division*/
 // AC #3 function return remainder
 
 function testRemainder() {
-    const result = modulus(29, 6);
+    const result = remainder(29, 6);
     if(result.value !== 5) {
         console.error('testRemainder - value - FAIL');
     }

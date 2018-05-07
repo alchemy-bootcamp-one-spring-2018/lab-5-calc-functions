@@ -9,24 +9,27 @@
 <body>
     <h1>MATH FUNCTIONS</h1>
 
-    <section>
+    <section id="calculator">
         <div>
-            Dividend:
-            <input id="dividend" type="number">
+            value-one:
+            <input id="first-value" type="number">
             
-            Divisor:
-            <input id="divisor" type="number">
+            value-two:
+            <input id="second-value" type="number">
 
-            Remainder:
-            <span id="remainder"></span>
+            result:
+            <span id="result"></span>
         </div>
 
         <div>
+            <button onclick="showAddition()">Addition</button>
+            <button onclick="showSubtraction()">Subtraction</button>
+            <button onclick="showMultiplication()">Multiplication</button>
+            <button onclick="showDivision()">Division</button>
             <button onclick="showRemainder()">Remainder</button>
         </div>
 
-        <p id="modulo-description"></p>
-        
+        <p id="calculation-description"></p>       
     </section>
 
     <script src="calc.js"></script>
