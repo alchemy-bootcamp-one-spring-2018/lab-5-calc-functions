@@ -12,37 +12,75 @@
         <h3>Add</h3>
         <input id="x-sum"> + <input id="y-sum"> = <span id="sum"></span>
         <p>
-            <button id="calc-sum" onclick="showAdd()">Add It</button>
+            <button onclick="showAdd()">Add It</button>
         </p>
         <p id="sum-summary"></p>
     </section>
 
     <section>
         <h3>Subtract</h3>
-        <input id="x-sub"> - <input id="y-sub"> =
+        <input id="x-sub"> - <input id="y-sub"> = <span id="diff"></span>
         <p>
-            <button id="calc-diff">Subtract It</button>
+            <button onclick="showSubtract()">Subtract It</button>
         </p>
-        <p id="sub-summary"></p>
+        <p id="diff-summary"></p>
     </section>
 
     <section>
         <h3>Multiply</h3>
-        <input id="x-multiply"> * <input id="y-multiply"> =
+        <input id="x-multiply"> * <input id="y-multiply"> = <span id="multiple"></span>
         <p>
-            <button id="calc-multiply">Multiply It</button>
+            <button onclick="showMultiply()">Multiply It</button>
         </p>
-        <p id="multiply-summary"></p>
+        <p id="multiple-summary"></p>
 
     </section>
 
     <section>
         <h3>Divide</h3>
-        <input id="x-div"> / <input id="y-div"> =
+        <input id="x-div"> / <input id="y-div"> = <span id="quotient"></span>
         <p>
-            <button id="calc-quot">Divide It</button>
+            <button onclick="showDivide()">Divide It</button>
         </p>
-        <p id="div-summary"></p>
+        <p id="quot-summary"></p>
+    </section>
+
+    <section>
+        <h3>Divide with Remainder</h3>
+        <input id="x-div-remain"> / <input id="y-div-remain">
+        <p id="quotient-remain">Quotient: </p>
+        <p id="remainder">Remainder: </p>
+        <p>
+            <button onclick="showDivideWithRemainder()">Divide It</button>
+        </p>
+        <p id="quot-remain-summary"></p>
+    </section>
+
+    <section>
+        <h3>Hypotenuse</h3>
+        Side A: <input id="x-hypo"> Side B: <input id="y-hypo"> Side C: <span id="hypo"></span>
+        <p>
+            <button onclick="showHypotenuse()">Longest side?</button>
+        </p>
+        <p id="hypo-summary"></p>
+    </section>
+
+    <section>
+        <h3>Is it Even?</h3>
+        <input id="x-even"> <span id="even"></span>
+        <p>
+            <button onclick="showEven()">Test Even</button>
+        </p>
+        <p id="even-summary"></p>
+    </section>
+
+    <section>
+        <h3>Is it Odd?</h3>
+        <input id="x-odd"> <span id="odd"></span>
+        <p>
+            <button onclick="showOdd()">Test Odd</button>
+        </p>
+        <p id="odd-summary"></p>
     </section>
     
     <script src="calc.js"></script>
