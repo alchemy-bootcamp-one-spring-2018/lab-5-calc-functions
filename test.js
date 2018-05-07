@@ -1,3 +1,4 @@
+/* globals remainder */
 
 function testRemainder() {
     const result = remainder (29, 6);

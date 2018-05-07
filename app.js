@@ -1,5 +1,5 @@
-
-
+/* exported showRemainder, showAdd, showSub, showMulti */
+/* globals remainder, add, subtract, multi */
 
 function showRemainder() {
     const x = parseInt(document.getElementById('dividend').value);

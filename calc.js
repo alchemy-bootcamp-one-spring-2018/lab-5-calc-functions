@@ -1,4 +1,4 @@
-/* exported remainder */
+/* exported remainder, add, subtract, multi */
 
 function remainder(x, y) {
     var remainder = x % y;
