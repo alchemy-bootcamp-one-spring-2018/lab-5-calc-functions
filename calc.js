@@ -15,7 +15,7 @@ function displaySubSum(x, y) {
     var subtractionSum = x - y;
   
     return {
-        value: remainder,
+        value: subtractionSum,
         description: x + ' minus ' + y + ' is: ' + subtractionSum };
 }
 
