@@ -1,3 +1,5 @@
+/* exported displayAddSum */
+
 //values for test functions will be 21 and 5
 
 //test for addition function
@@ -6,7 +8,7 @@ function testdisplayAddSum() {
     if(result.value !== 26) {
         console.error('testdisplayAddSum - value - FAIL', result.value);
     } else {
-        console.log('testdisplayAddSum - value - SUCCESS');
+        console.log('testdisplayAddSum - value - SUCCESS', result.value);
     }
 }
 
@@ -16,7 +18,7 @@ function testdisplaySubSum() {
     if(result.value !== 16) {
         console.error('testdisplaySubSum - value - FAIL', result.value);
     } else {
-        console.log('testdisplaySubSum - value - SUCCESS');
+        console.log('testdisplaySubSum - value - SUCCESS', result.value);
     }
 }
 
@@ -26,7 +28,7 @@ function testdisplayProduct() {
     if(result.value !== 105) {
         console.error('testdisplayProduct - value - FAIL', result.value);
     } else {
-        console.log('testdisplayProduct - value - SUCCESS');
+        console.log('testdisplayProduct - value - SUCCESS', result.value);
     }
 }
 
@@ -36,7 +38,7 @@ function testdisplayQuotient() {
     if(result.value !== 4.2) {
         console.error('testdisplayQuotient - value - FAIL', result.value);
     } else {
-        console.log('testdisplayQuotient - value - SUCCESS');
+        console.log('testdisplayQuotient - value - SUCCESS', result.value);
     }
 }
 
@@ -46,7 +48,7 @@ function testdisplayRemainder() {
     if(result.value !== 5) {
         console.error('testdisplayRemainder - value - FAIL', result.value);
     } else {
-        console.log('testdisplayRemainder - value - SUCCESS');
+        console.log('testdisplayRemainder - value - SUCCESS', result.value);
     }
 }
   
