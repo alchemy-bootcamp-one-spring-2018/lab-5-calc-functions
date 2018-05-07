@@ -1,54 +1,71 @@
-/* globals  */
-/* exported  */
+/* globals resultSum, resultDifference, resultProduct, resultQuotient, resultRemainder */
+/* exported testSum, testDifference, testProduct, testQuotient, testRemainder */
 
 
 // add
 function testSum() {
-    var sum = 
+    var resultSum = sum(10, 4);
     
-    if(num1 + num2 === result) {
-        console.log('TDD - function returns correct result - SUCCESS');
-    }
+    if(resultSum !== 14) {
+        console.error('testSum - value - FAIL', resultSum.value);
+    } 
     else {
-        console.log('TDD - function returns correct result - FAIL');
+        console.log('testSum - value - SUCCESS');
     }
 }
+
+testSum();
+
 // subtract
-function testDifference() {    
-    if(num1 - num2 === result) {
-        console.log('TDD - function returns correct result - SUCCESS');
-    }
+function testDifference() {   
+    var resultDifference = difference(25, 5);
+    
+    if(resultDifference !== 20) {
+        console.error('testDifference - value - FAIL', resultDifference.value);
+    } 
     else {
-        console.log('TDD - function returns correct result - FAIL');
+        console.log('testDifference - value - SUCCESS');
     }
 }
 // multiply
-function testProduct() {    
-    if(num1 * num2 === result) {
-        console.log('TDD - function returns correct result - SUCCESS');
-    }
+function testProduct() {
+    var resultProduct = product(12, 12);
+    
+    if(resultProduct !== 144) {
+        console.error('testProduct - value - FAIL', resultProduct.value);
+    } 
     else {
-        console.log('TDD - function returns correct result - FAIL');
+        console.log('testProduct - value - SUCCESS');
     }
 }
+
+testProduct();
+
 // divide
 function testQuotient() {    
-    if(num1 / num2 === result) {
-        console.log('TDD - function returns correct result - SUCCESS');
-    }
+    var resultQuotient = quotient(30, 10);
+    
+    if(resultQuotient !== 3) {
+        console.error('testQuotient - value - FAIL', resultQuotient.value);
+    } 
     else {
-        console.log('TDD - function returns correct result - FAIL');
+        console.log('testQuotient - value - SUCCESS');
     }
 }
+
+testQuotient();
+
 // remainder
 function testRemainder() {
-    const result = remainder(29, 6);
-    if(result.value !== 5) {
-        console.error('testRemainder - value - FAIL', result.value);
-    } else {
-      console.log('testRemainder - value - SUCCESS');
+    var resultRemainder = remainder(29, 6);
+
+    if(resultRemainder.value !== 5) {
+        console.error('testRemainder - value - FAIL', resultRemainder.value);
+    } 
+    else {
+        console.log('testRemainder - value - SUCCESS');
     }
-  }
-  
-  
-  testRemainder();
+}
+
+
+testRemainder();
