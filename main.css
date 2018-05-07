@@ -1,0 +1,14 @@
+#container {
+    width: 600px;
+    background-color: rgb(85, 44, 61);
+    margin: auto;
+    padding: 25px;
+}
+
+body{
+    color: whitesmoke;
+}
+h1 {
+    color: rgb(228, 228, 228);
+    text-align: center;
+}
