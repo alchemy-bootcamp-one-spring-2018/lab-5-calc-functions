@@ -72,7 +72,7 @@ function testHypotenuse() {
 
 function testIsEven() {
     const result = isEven(8);
-    if(result.value === 1) {
+    if(result.value !== 'Yep!') {
         console.error('testIsEven - value - FAIL', result.value);
     }
     else {
@@ -82,11 +82,31 @@ function testIsEven() {
 
 function testIsOdd() {
     const result = isOdd(9);
-    if(result.value === 0) {
+    if(result.value !== 'Yep!') {
         console.error('testIsOdd - value - FAIL', result.value);
     }
     else {
         console.log('testIsOdd - value - SUCCESS');
+    }
+}
+
+function testIsEvenString() {
+    const result = isEven('jdfkdla');
+    if(result.value !== 'Error!') {
+        console.error('testIsEvenString - value - FAIL', result.value);
+    }
+    else {
+        console.log('testIsEvenString - value - SUCCESS');
+    }
+}
+
+function testAddString() {
+    const result = add('klajfd', '21');
+    if(result.value !== 'Error!') {
+        console.error('testAddString - value - FAIL', result.value);
+    }
+    else {
+        console.log('testAddString - value - SUCCESS');
     }
 }
 
@@ -99,3 +119,5 @@ testDivideWithRemainder();
 testHypotenuse();
 testIsEven();
 testIsOdd();
+testIsEvenString();
+testAddString();
