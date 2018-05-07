@@ -11,43 +11,42 @@ function testdisplayAddSum() {
 }
 
 //test for subtraction function
-function testdisplayRemainder() {
-    const result = displayRemainder(29, 6);
-    if(result.value !== 5) {
-        console.error('testRemainder - value - FAIL', result.value);
+function testdisplaySubSum() {
+    const result = displaySubSum(21, 5);
+    if(result.value !== 16) {
+        console.error('testdisplaySubSum - value - FAIL', result.value);
     } else {
-        console.log('testRemainder - value - SUCCESS');
+        console.log('testdisplaySubSum - value - SUCCESS');
     }
 }
 
 //test for multiplication function
-function testdisplayRemainder() {
-    const result = displayRemainder(29, 6);
-    if(result.value !== 5) {
-        console.error('testRemainder - value - FAIL', result.value);
+function testdisplayProduct() {
+    const result = displayProduct(21, 5);
+    if(result.value !== 105) {
+        console.error('testdisplayProduct - value - FAIL', result.value);
     } else {
-        console.log('testRemainder - value - SUCCESS');
+        console.log('testdisplayProduct - value - SUCCESS');
     }
 }
 
 //test for division function
-function testdisplayRemainder() {
-    const result = displayRemainder(29, 6);
-    if(result.value !== 5) {
-        console.error('testRemainder - value - FAIL', result.value);
+function testdisplayQuotient() {
+    const result = displayQuotient(21, 5);
+    if(result.value !== 4.2) {
+        console.error('testdisplayQuotient - value - FAIL', result.value);
     } else {
-        console.log('testRemainder - value - SUCCESS');
+        console.log('testdisplayQuotient - value - SUCCESS');
     }
 }
-
 
 //test for remainder function
 function testdisplayRemainder() {
     const result = displayRemainder(29, 6);
     if(result.value !== 5) {
-        console.error('testRemainder - value - FAIL', result.value);
+        console.error('testdisplayRemainder - value - FAIL', result.value);
     } else {
-        console.log('testRemainder - value - SUCCESS');
+        console.log('testdisplayRemainder - value - SUCCESS');
     }
 }
   
