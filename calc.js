@@ -9,26 +9,26 @@ function remainder(x, y) {
     };
 }
 function add(x, y) {
-    var add = x + y;
+    var total = x + y;
 
     return {
-        value: add,
-        description: x + ' plus ' + y + ' is: ' + add
+        value: total,
+        description: x + ' plus ' + y + ' is: ' + total
     };
 }
 function subtract(x, y) {
-    var subtract = x - y;
+    var total = x - y;
 
     return {
-        value: subtract,
-        description: x + ' minus ' + y + ' is: ' + subtract
+        value: total,
+        description: x + ' minus ' + y + ' is: ' + total
     };
 }
 function multi(x, y) {
-    var multi = x * y;
+    var total = x * y;
 
     return {
-        value: multi,
-        description: x + ' multiplied by ' + y + ' is: ' + multi
+        value: total,
+        description: x + ' multiplied by ' + y + ' is: ' + total
     };
 }
