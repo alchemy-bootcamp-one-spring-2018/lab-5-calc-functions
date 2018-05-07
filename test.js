@@ -6,7 +6,7 @@
 function testSum() {
     var resultSum = add(10, 4);
     
-    if(resultSum !== 14) {
+    if(resultSum.value !== 14) {
         console.error('testSum - value - FAIL', resultSum.value);
     }
     else {
@@ -20,7 +20,7 @@ testSum();
 function testDifference() {
     var resultDifference = subtract(25, 5);
     
-    if(resultDifference !== 20) {
+    if(resultDifference.value !== 20) {
         console.error('testDifference - value - FAIL', resultDifference.value);
     }
     else {
@@ -34,7 +34,7 @@ testDifference();
 function testProduct() {
     var resultProduct = multiply(12, 12);
     
-    if(resultProduct !== 144) {
+    if(resultProduct.value !== 144) {
         console.error('testProduct - value - FAIL', resultProduct.value);
     }
     else {
@@ -48,7 +48,7 @@ testProduct();
 function testQuotient() {
     var resultQuotient = divide(30, 10);
     
-    if(resultQuotient !== 3) {
+    if(resultQuotient.value !== 3) {
         console.error('testQuotient - value - FAIL', resultQuotient.value);
     }
     else {
