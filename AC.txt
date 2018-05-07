@@ -1,0 +1,7 @@
+US:
+As a User, I need a webapp that I can calculate <insert-operation-here>, so that I know the results.
+
+AC:
+Given Page Load, I see a prompt for <x>, and <y>.
+^^^^^^^^^^^^^^^, I see a button 'calc'
+Given I click Calc button, I see the <result-ofoperation> of x and y
