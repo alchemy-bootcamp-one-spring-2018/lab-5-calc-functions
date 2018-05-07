@@ -1,4 +1,4 @@
-/* exported remainder addition difference*/
+/* exported subtract remainder addition difference*/
 function remainder(x, y) {
     var remainder = x % y;
 
@@ -13,7 +13,12 @@ function addition(x, y){
         value: sum
     };
 }
-function difference(x, y){
-    var difference
+function subtract(x, y){
+    var difference = x - y;
+
+    return {
+        value: difference
+    };
+
 
 }

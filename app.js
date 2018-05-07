@@ -1,5 +1,5 @@
 /* exported remainder getSum multiply showRemainder getDifference divide */
-/* globals remainder addition difference multiply product quotient */
+/* globals remainder addition subtract multiply product quotient */
 
 //gets Modulus
 function showRemainder() {
@@ -21,7 +21,7 @@ function getSum(){
 function getDifference() {
     var x = parseInt(document.getElementById('numOne'));
     var y = parseInt(document.getElementById('numTwo'));
-    var result = difference(x, y);
+    var result = subtract(x, y);
     document.getElementById('result').textContent = result.value;
 
 }
