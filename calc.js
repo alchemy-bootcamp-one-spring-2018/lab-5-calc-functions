@@ -2,37 +2,42 @@
 'use strict';
 
 function addition(x, y) {
-    const addition = x + y;
+    const result = x + y;
     return {
-        value: addition
+        value: result,
+        description: x + ' plus ' + y + ' equals ' + result
     };
 }
 
 function subtraction(x, y) {
-    const subtraction = x - y;
+    const result = x - y;
     return {
-        value: subtraction
+        value: result,
+        description: x + ' minus ' + y + ' equals ' + result
     };
 }
 
 function multiplication(x, y) {
-    const multiplication = x * y;
+    const result = x * y;
     return {
-        value: multiplication
+        value: result,
+        description: x + ' times ' + y + ' equals ' + result
     };
 }
 
 function division(x, y) {
-    const division = x / y;
+    const result = x / y;
     return {
-        value: division
+        value: result,
+        description: x + ' divided by ' + y + ' equals ' + result
     };
 }
 
 function remainder(x, y) {
-    const remainder = x % y;
+    const result = x % y;
     return {
-        value: remainder
+        value: result,
+        description: 'The remainder of ' + x + ' divided by ' + y + ' is ' + result
     };
 }
 

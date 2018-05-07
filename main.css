@@ -1,9 +1,37 @@
 body {
     background: red;
     color: yellow;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 4em;
 }
 
-buttons {
+.calc-functions {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+}
+button {
+    background: blue;
     color: yellow;
+    font-size: 2em;
+    border: none;
+}
+.buttons {
+    height: 45px;
+}
+input {
     font-size: 3em;
+}
+
+p {
+    font-size: 3em;
+}
+
+#result {
+    height: 48px;
 }

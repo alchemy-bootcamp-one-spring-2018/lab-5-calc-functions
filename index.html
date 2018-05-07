@@ -11,17 +11,21 @@
     <h1>Math Functions</h1>
 
     <div class="calc-functions">
-        <input id="input-x" type="number">
-        <input id="input-y" type="number">
-        <div id="buttons">
+        <input id="input-x" placeholder="x" type="number">
+        <input id="input-y" placeholder="y" type="number">
+        <p id="result"></p>
+        <div class="buttons">
             <button onclick="doAddition()">ADD</button>
             <button onclick="doSubtraction()">SUBTRACT</button>
             <button onclick="doMultiplication()">MULTIPLY</button>
             <button onclick="doDivision()">DIVIDE</button>
             <button onclick="doRemainder()">REMAINDER</button>
-            
         </div>
-        <h2 id="response"></h2>
+        <div class="spacer"></div>
+        <div class="buttons">
+            <button onclick="doOddorEven">ODD OR EVEN</button>
+        </div>
+        <p id="response"></p>
     </div>
     
     <script src="calc.js"></script>
