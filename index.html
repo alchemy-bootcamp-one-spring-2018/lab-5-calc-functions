@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            Dividend:
+            <input id="dividend" type="number">
+            Divisor:
+            <input id="divisor" type="number">
+            Remainder:
+            <span id="remainder"></span>
+    
+        </div>
+        <div>
+            <button onclick="showRemainder()">Remainder</button>
+            <p id = "remainder-description"></p>
+        </div>
+        <div>
+            Addition:
+            <input id="add1" type="number">
+            Plus:
+            <input id="add2" type="number">
+            Equals:
+            <span id="addEquals"></span>
+        </div>
+        <div>
+            <button onclick="showAdd()">Add</button>
+            <p id = "add-description"></p>
+        </div>
+        <div>
+            Subtraction:
+            <input id="sub1" type="number">
+            Minus:
+            <input id="sub2" type="number">
+            Equals:
+            <span id="subEquals"></span>
+        </div>
+        <div>
+            <button onclick="showSub()">Subtract</button>
+            <p id = "sub-description"></p>
+        </div>
+        <div>
+            Multiply:
+            <input id="multi1" type="number">
+            Times:
+            <input id="multi2" type="number">
+            Equals:
+            <span id="multiEquals"></span>
+        </div>
+        <div>
+            <button onclick="showMulti()">Multiply</button>
+            <p id = "multi-description"></p>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
