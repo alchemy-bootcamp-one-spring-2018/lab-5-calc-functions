@@ -44,7 +44,7 @@ function testDivide() {
         console.error('testDivide - value - FAIL. Expected:', result.value);
     }
     else {
-        console.log('testDivide - value - SUCCESS')
+        console.log('testDivide - value - SUCCESS');
     }
 
 }
