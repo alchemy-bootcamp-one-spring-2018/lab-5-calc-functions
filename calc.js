@@ -1,11 +1,8 @@
-/* globals sum, difference, product, quotient */
 /* exported add, subtract, multiply, divide */
 'use strict';
 
 // add
 function add(x, y) {
-    x = 10;
-    y = 4;
     var sum = x + y;
 
     return {

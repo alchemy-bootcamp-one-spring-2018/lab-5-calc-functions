@@ -1,4 +1,4 @@
-/* globals resultSum, resultDifference, resultProduct, resultQuotient, resultRemainder */
+/* global add, subtract, multiply, divide  */
 /* exported testSum, testDifference, testProduct, testQuotient, testRemainder */
 'use strict';
 
