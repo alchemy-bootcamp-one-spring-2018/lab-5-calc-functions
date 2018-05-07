@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate!</title>
+</head>
+<body>
+    <h1>Lets do some MATH!</h1>
+    <section>
+        <div>
+            Number:
+            <input type="number" id="numOne">
+            by Number:
+            <input type="number" id="numTwo">
+            = 
+            <span id="result"></span>
+        </div>
+    </section>
+    <span>
+        <button onclick="showRemainder()" id="get-remainder">Get Remainder</button>
+        <button onclick="getSum()" id="get-sum">Add</button>
+        <button onclick="getDifference" id="get-difference">Subtract</button>
+        <button onclick="divide()" id="divide">Divide</button>
+        <button onclick="multiply()" id="multiply">Multiply</button>
+    </span>
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
