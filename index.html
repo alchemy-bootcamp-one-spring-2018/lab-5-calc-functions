@@ -5,10 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" src="">
+
 </head>
 <body>
+    <section>
+        <div>
+            <h2>Add</h2>
+            Num1: 
+            <input id="add_x" type="number">
+            + Num2:
+            <input id="add_y">
+            <button onclick="showAdd()">Add</button>
+            Result:
+            <span id="add_result">
+            <!-- <p id="add_description"></p>     -->
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Subtract</h2>
+            Num1:
+            <input id="subtract_x" type="number">
+            - Num2:
+            <input id="subtract_y">
+            <button onclick="showSubtract()">Subtract</button>
+            Result:
+            <span id="subtract_result"></span>
+        </div>
+    </section>
     
+    <section>
+        <div>
+            <h2>Multiply</h2>
+            Num1: 
+            <input id="multiply_x" type="number">
+            * Num2:
+            <input id="multiply_y">
+            <button onclick="showMultiply()">Multiply</button>
+            Result:
+            <span id="multiply_result">
+            <!-- <p id="description"></p>     -->
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Divide</h2>
+            Num1: 
+            <input id="divide_x" type="number">
+            / Num2:
+            <input id="divide_y">
+            <button onclick="showDivide()">Divide</button>
+            Result:
+            <span id="divide_result">
+            <!-- <p id="description"></p>     -->
+        </div>
+    </section>
 
     <script src="calc.js"></script>
     <script src="app.js"></script>

@@ -7,13 +7,14 @@ function add(x, y) {
 
     return {
         value: sum,
-        //description: 
+        description: "The sum of " + x + " and " + y + " is " + sum + "."
     };
 }
 
 // subtract
 function subtract(x, y) {
     var difference = x - y;
+    //console.log('calc subtract() result', difference.value);
 
     return {
         value: difference,
@@ -34,7 +35,6 @@ function multiply(x, y) {
 // divide
 function divide(x, y) {
     var quotient = x / y;
-
     return {
         value: quotient,
         //description:
