@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do math, not meth</title>
+    <script src="./app.js"></script>
+    <script src="./calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div style="width: 25%; margin: auto; border: 1px solid black; padding: 33px;">
+        <h1>Math, not meth</h1>
+        <span id="inputs">
+            X: <input id="x" type="number">
+        <br>
+            Y: <input id="y" type="number">
+        </span>
+        <br>
+        <span id="results">
+            Result: <span id="answer"></span>
+        </span>
+        <br>
+        <input type="button" value="Add them up!" onclick="showSum()"><br>
+        <input type="button" value="Subtract Y from X!" onclick="showMinus()"><br>
+        <input type="button" value="Multiply them!" onclick="showProduct()"><br>
+        <input type="button" value="Divide Y by X!" onclick="showDivide()"><br>
+        <input type="button" value="Find the remainder of X % Y!" onclick="showRemainder()"><br>
+        <span id="text"></span>
+    </div>
+</body>
+</html>

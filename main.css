@@ -1,0 +1,11 @@
+input {
+    width: 333px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#results {
+    font-size: 2rem;
+}
