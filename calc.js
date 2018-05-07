@@ -1,6 +1,8 @@
 /* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct
 displayQuotient displayRemainder */
 
+/*
+
 //addition function
 function displayAddSum(x, y) {
     var additionSum = x + y;
@@ -38,9 +40,9 @@ function displayQuotient(x, y) {
         description: x + ' divided by ' + y + ' is: ' + quotient
     };
 }
-
+*/
 //remainder function
-function displayRemainder(x, y) {
+function getRemainder(x, y) {
     var remainder = x % y;
     var quotient = x / y;
   
