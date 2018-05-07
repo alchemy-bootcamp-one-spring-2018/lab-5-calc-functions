@@ -65,3 +65,15 @@ function testEvenOdd(){
 }
 
 testEvenOdd();
+
+function testPrime(){
+    var result = findPrime(24);
+    if(result === true){
+        console.log('This number is prime!');
+    } else {
+        console.log('This number is not prime!');
+    }
+    console.log('this is the result: ' + result);
+}
+
+testPrime();

@@ -1,5 +1,5 @@
 //This is your math file
-/* export addNumbers subtractNumbers multiplyNumbers divideNumbers*/
+/* exported addNumbers subtractNumbers multiplyNumbers divideNumbers remainder hypotNumbers evenOdd*/
 
 function addNumbers(x, y){
     var sum = x + y;
@@ -43,7 +43,7 @@ function hypotNumbers(x, y){
     var hypotenuse = (x * x) + (y * y);
     return {
         value: hypotenuse
-    }
+    };
 }
 
 function evenOdd(x){
@@ -51,5 +51,14 @@ function evenOdd(x){
     console.log('The value is ' + evenOdd);
     return {
         value: evenOdd
+    };
+}
+
+function findPrime(x){
+    for(var i = 2; i < x; i++){
+        if(x % i === 0){
+            return false;
+        }
     }
+    return true;
 }

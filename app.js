@@ -1,10 +1,4 @@
-//This is your functionality file
-// function showRemainder() {
-//     var x = parseInt(document.getElementById('dividend').value);
-//     var y = parseInt(document.getElementById('divisor').value);
-//     var result = remainder(x, y);
-//     document.getElementById('remainder').textContent = result.value;
-// }
+/* exported showSum showDifference showProduct showQuotient showHypot showEvenOdd*/
 
 function showSum() {
     var x = parseInt(document.getElementById('first-add').value);
@@ -52,5 +46,16 @@ function showEvenOdd() {
         document.getElementById('even-odd-display').textContent = 'This number is even!';
     } else {
         document.getElementById('even-odd-display').textContent = 'This number is odd!';
+    }
+}
+
+function showPrime() {
+    var x = parseInt(document.getElementById('prime-input').value);
+    var result = findPrime(x);
+    console.log(result);
+    if(result === true){
+        document.getElementById('prime-display').textContent = 'This is a prime number!';
+    } else {
+        document.getElementById('prime-display').textContent = 'This is not a prime number!';
     }
 }
