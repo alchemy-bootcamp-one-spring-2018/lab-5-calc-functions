@@ -30,8 +30,9 @@ function showProduct() {
 function showQuotient() {
     var x = parseInt(document.getElementById('dividend').value);
     var y = parseInt(document.getElementById('divisor').value);
-    var result = divideNumbers(x, y);
-    document.getElementById('quotient').textContent = result.value;
+    var divideResult = divideNumbers(x, y);
+    var remainderResult = remainder(x, y);
+    document.getElementById('quotient').textContent = divideResult.value + ' remainder ' + remainderResult.value;
     if(y === 0){
         document.getElementById('quotient').textContent = 'Error, division by 0 not possible. Please enter a valid divisor';
     }
@@ -42,4 +43,14 @@ function showHypot() {
     var y = parseInt(document.getElementById('second-leg').value);
     var result = hypotNumbers(x, y);
     document.getElementById('hypotenuse').textContent = result.value;
+}
+
+function showEvenOdd() {
+    var x = parseInt(document.getElementById('even-odd-input').value);
+    var result = evenOdd(x);
+    if(result.value === 0){
+        document.getElementById('even-odd-display').textContent = 'This number is even!';
+    } else {
+        document.getElementById('even-odd-display').textContent = 'This number is odd!';
+    }
 }

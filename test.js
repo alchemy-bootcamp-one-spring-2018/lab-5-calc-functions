@@ -54,3 +54,14 @@ function testHypot(){
 }
 
 testHypot();
+
+function testEvenOdd(){
+    var result = evenOdd(19);
+    if(result.value === 0){
+        console.log('This number is even!');
+    } else {
+        console.log('This number is odd!');
+    }
+}
+
+testEvenOdd();

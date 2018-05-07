@@ -28,7 +28,14 @@ function multiplyNumbers(x, y){
 function divideNumbers(x, y){
     var quotient = x / y;
     return {
-        value: quotient
+        value: Math.floor(quotient)
+    };
+}
+
+function remainder(x, y) {
+    var remainder = x % y;
+    return {
+        value: remainder
     };
 }
 
@@ -39,12 +46,10 @@ function hypotNumbers(x, y){
     }
 }
 
-
-
-// function remainder(x, y) {
-//     var remainder = x % y;
-
-//     return {
-//         value: remainder
-//     };
-// }
+function evenOdd(x){
+    var evenOdd = x % 2;
+    console.log('The value is ' + evenOdd);
+    return {
+        value: evenOdd
+    }
+}
