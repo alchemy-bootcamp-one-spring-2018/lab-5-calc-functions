@@ -56,9 +56,21 @@ function testDivide(){
         console.log('testDivide - value - Success!', result.value);
     }
 }
+
+// testing even odd
+function testEven(){
+    var result = quotient(6, 3);
+    if(result.value % 2 === 0 ){
+        console.log('testEven - value - EVEN');
+    }
+    else {
+        console.log('testEven - value - ODD');
+    }
+}
 //loading test functions
 testRemainder();
 testAddition();
 testSubtraction();
 testMultiply();
 testDivide();
+testEven();
