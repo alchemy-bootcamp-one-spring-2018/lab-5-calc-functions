@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>view console for results</p>
+    <section>
+        <h2>Addition!</h2>
+        <input id = 'first-add' type="number"> +
+        <input id = 'second-add' type="number">
+        <button id = 'add' onclick="showSum()">Add them!</button>
+        <p id = 'sum'></p>
+    </section>
+    <section>
+        <h2>Subtraction!</h2>
+        <input id = 'first-sub' type="number"> -
+        <input id = 'second-sub' type="number">
+        <button id = 'subtract' onclick="showDifference()">Subtract them!</button>
+        <p id = 'difference'></p>
+    </section>
+    <section>
+        <h2>Multiply!</h2>
+        <input id = 'multiplicand' type='number'> x
+        <input id = 'multiplier' type='number'>
+        <button id = 'multiply' onclick = "showProduct()">Multiply them!</button>
+        <p id = 'product'></p>
+    </section>
+    <section>
+        <h2>Divide!</h2>
+        <input id='dividend' type="number"> /
+        <input id='divisor' type="number">
+        <button id='calculate' onclick="showQuotient()">Divide them!</button>
+        <p id='quotient'></p>
+        <script src='calc.js'></script>
+        <script src ='app.js'></script>
+    </section>
+</body>
+</html>
