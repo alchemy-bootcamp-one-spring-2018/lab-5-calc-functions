@@ -12,6 +12,13 @@ function displayAddSum() {
 }
 
 //Subtraction - function name is displaySubSum
+function displaySubSum() {
+    const x = parseInt(document.getElementById('subtraction-number-1').value);
+    const y = parseInt(document.getElementById('subtraction-number-2').value);
+    const result = getSubSum(x, y);
+    
+    document.getElementById('subtraction-result').textContent = result.description;
+}
 
 //Multiplication - function name is displayProduct
 
