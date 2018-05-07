@@ -4,24 +4,20 @@
 /*exported showProduct*/
 
 function showSum() {
-    const Sum = (x + y);
+    const sum = (x + y);
     const x = parseInt(document.getElementById('number-static').value);
     const y = parseInt(document.getElementById('number-actor').value);
-    const result = Sum(x, y);
+    const result = sum(x, y);
     document.getElementById('Sum').textContent = result.value;
-    document.getElementById('sum-description');
+    document.getElementById('sum-description').textContent = result.description;
 
     console.log(result);
-    // return {
-    //     value: result:
-    // };
-    
 }
 
 function showProduct() {
     const x = parseInt(document.getElementById('add-num').value);
     const y = parseInt(document.getElementById('added- num').value);
-    const result = Product(x, y);
+    const result = product(x, y);
     document.getElementById('Product').textContent = result.value;
     document.getElementById('Product-description');
 }
