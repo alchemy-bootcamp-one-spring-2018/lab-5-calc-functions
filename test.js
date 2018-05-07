@@ -1,14 +1,14 @@
 /* globals resultSum, resultDifference, resultProduct, resultQuotient, resultRemainder */
 /* exported testSum, testDifference, testProduct, testQuotient, testRemainder */
-
+'use strict';
 
 // add
 function testSum() {
-    var resultSum = sum(10, 4);
+    var resultSum = add(10, 4);
     
     if(resultSum !== 14) {
         console.error('testSum - value - FAIL', resultSum.value);
-    } 
+    }
     else {
         console.log('testSum - value - SUCCESS');
     }
@@ -17,23 +17,26 @@ function testSum() {
 testSum();
 
 // subtract
-function testDifference() {   
-    var resultDifference = difference(25, 5);
+function testDifference() {
+    var resultDifference = subtract(25, 5);
     
     if(resultDifference !== 20) {
         console.error('testDifference - value - FAIL', resultDifference.value);
-    } 
+    }
     else {
         console.log('testDifference - value - SUCCESS');
     }
 }
+
+testDifference();
+
 // multiply
 function testProduct() {
-    var resultProduct = product(12, 12);
+    var resultProduct = multiply(12, 12);
     
     if(resultProduct !== 144) {
         console.error('testProduct - value - FAIL', resultProduct.value);
-    } 
+    }
     else {
         console.log('testProduct - value - SUCCESS');
     }
@@ -42,12 +45,12 @@ function testProduct() {
 testProduct();
 
 // divide
-function testQuotient() {    
-    var resultQuotient = quotient(30, 10);
+function testQuotient() {
+    var resultQuotient = divide(30, 10);
     
     if(resultQuotient !== 3) {
         console.error('testQuotient - value - FAIL', resultQuotient.value);
-    } 
+    }
     else {
         console.log('testQuotient - value - SUCCESS');
     }
@@ -56,16 +59,16 @@ function testQuotient() {
 testQuotient();
 
 // remainder
-function testRemainder() {
-    var resultRemainder = remainder(29, 6);
+// function testRemainder() {
+//     var resultRemainder = remainder(29, 6);
 
-    if(resultRemainder.value !== 5) {
-        console.error('testRemainder - value - FAIL', resultRemainder.value);
-    } 
-    else {
-        console.log('testRemainder - value - SUCCESS');
-    }
-}
+//     if(resultRemainder.value !== 5) {
+//         console.error('testRemainder - value - FAIL', resultRemainder.value);
+//     }
+//     else {
+//         console.log('testRemainder - value - SUCCESS');
+//     }
+// }
 
 
-testRemainder();
+// testRemainder();
