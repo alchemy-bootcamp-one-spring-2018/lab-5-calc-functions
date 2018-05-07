@@ -10,7 +10,7 @@ function showRemainder() {
     document.getElementById('result-message').textContent = result.description;
 }
 
-//Gets Sum
+//Gets Sum!
 function getSum(){
     var x = parseInt(document.getElementById('numOne').value);
     var y = parseInt(document.getElementById('numTwo').value);
@@ -29,6 +29,15 @@ function getDifference() {
 
 }
 
+//Multiplies
+function multiply() {
+    var x = parseInt(document.getElementById('numOne').value);
+    var y = parseInt(document.getElementById('numTwo').value);
+    var result = product(x, y);
+    document.getElementById('result').textContent = result.value;
+    document.getElementById('result-message').textContent = result.description;
+}
+
 //Divides
 function divide() {
     var x = parseInt(document.getElementById('numOne').value);
@@ -37,13 +46,4 @@ function divide() {
     document.getElementById('result').textContent = result.value;
     document.getElementById('result-message').textContent = result.description;
 
-}
-
-//Multiplies
-function multiply() {
-    var x = parseInt(document.getElementById('numOne').value);
-    var y = parseInt(document.getElementById('numTwo').value);
-    var result = product(x, y);
-    document.getElementById('result').textContent = result.value;
-    document.getElementById('result-message').textContent = result.description;
 }

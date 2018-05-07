@@ -1,14 +1,14 @@
 //AC#3 getting the results math function
-/*globals addition remainder subtract product */
+/* globals addition remainder subtract product quotient */
 
 //test addition
 function testAddition(){
     var result = addition(8, 7);
     if(result.value !== 15){
-        console.log('testAddition- value - Fail');
+        console.log('testAddition- value - Fail', result.value);
     }
     else {
-        console.log('testAddition- value - Success');
+        console.log('testAddition- value - Success', result.value);
     }
 }
 
@@ -19,7 +19,7 @@ function testRemainder() {
         console.log('testRemainder - value - Fail!', result.value);
     }
     else {
-        console.log('testRemainder - value - Success!');
+        console.log('testRemainder - value - Success!', result.value);
 
     }
 }
@@ -31,7 +31,7 @@ function testSubtraction() {
         console.log('testSubtraction - value - Fail!', result.value);
     }
     else {
-        console.log('testSubtraction - value - Success!');
+        console.log('testSubtraction - value - Success!', result.value);
     }
 }
 
@@ -42,7 +42,18 @@ function testMultiply() {
         console.log('testMultiply - value - Fail!', result.value);
     }
     else {
-        console.log('testMultiply - value - Success!');
+        console.log('testMultiply - value - Success!', result.value);
+    }
+}
+
+//test divide
+function testDivide(){
+    var result = quotient(10, 2);
+    if(result.value !== 5){
+        console.log('testDivide - value - FAIL!', result.value);
+    }
+    else {
+        console.log('testDivide - value - Success!', result.value);
     }
 }
 //loading test functions
@@ -50,3 +61,4 @@ testRemainder();
 testAddition();
 testSubtraction();
 testMultiply();
+testDivide();
