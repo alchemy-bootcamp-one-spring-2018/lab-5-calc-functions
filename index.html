@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Calculations!</title>
 </head>
 <body>
+    <section>
+        <h1>Fun Calculations!</h1>
+    </section>
+
+    <section>
+        <h3>Add</h3>
+        <input id="x-sum"> + <input id="y-sum"> = <span id="sum"></span>
+        <p>
+            <button id="calc-sum" onclick="showAdd()">Add It</button>
+        </p>
+        <p id="sum-summary"></p>
+    </section>
+
+    <section>
+        <h3>Subtract</h3>
+        <input id="x-sub"> - <input id="y-sub"> =
+        <p>
+            <button id="calc-diff">Subtract It</button>
+        </p>
+        <p id="sub-summary"></p>
+    </section>
+
+    <section>
+        <h3>Multiply</h3>
+        <input id="x-multiply"> * <input id="y-multiply"> =
+        <p>
+            <button id="calc-multiply">Multiply It</button>
+        </p>
+        <p id="multiply-summary"></p>
+
+    </section>
+
+    <section>
+        <h3>Divide</h3>
+        <input id="x-div"> / <input id="y-div"> =
+        <p>
+            <button id="calc-quot">Divide It</button>
+        </p>
+        <p id="div-summary"></p>
+    </section>
     
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

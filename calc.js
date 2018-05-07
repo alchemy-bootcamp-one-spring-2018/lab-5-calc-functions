@@ -5,7 +5,7 @@ function add(x, y) {
 
     return {
         value: sum,
-        description: 'The sum of ' + x + ' added to ' + y + ' is: ' + sum
+        description: 'The sum of ' + x + ' and ' + y + ' is: ' + sum
     };
 }
 
@@ -32,6 +32,6 @@ function divide(x, y) {
 
     return {
         value: quotient,
-        description: 'The quotient of ' + x + ' divided by ' + y + ' is: ' + quotient
+        description: 'The quotient of ' + x + ' and ' + y + ' is: ' + quotient
     };
 }
