@@ -40,6 +40,16 @@ function testDivide() {
     }
 }
 
+function testDivideByZero() {
+    const result = divide(42, 0);
+    if(result.value !== 'To infinity and beyond!') {
+        console.error('testDivideByZero - value - FAIL', result.value);
+    }
+    else {
+        console.log('testDivideByZero - value - SUCCESS');
+    }
+}
+
 function testDivideWithRemainder() {
     const result = divideWithRemainder(42, 5);
     if(result.firstValue !== 8 && result.secondValue !== 2) {
@@ -84,6 +94,7 @@ testAdd();
 testSubtract();
 testMultiply();
 testDivide();
+testDivideByZero();
 testDivideWithRemainder();
 testHypotenuse();
 testIsEven();
