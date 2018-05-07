@@ -9,10 +9,21 @@
 </head>
 <body>
     <h1>Math Functions</h1>
-    <input id="divide-x" type="number"> / 
-    <input id="divide-y" type="number"> = 
-    <button onclick="doRemainder()">DIVIDE</button>
-    <h2 id="remainder"></h2>
+
+    <div class="calc-functions">
+        <input id="input-x" type="number">
+        <input id="input-y" type="number">
+        <div id="buttons">
+            <button onclick="doAddition()">ADD</button>
+            <button onclick="doSubtraction()">SUBTRACT</button>
+            <button onclick="doMultiplication()">MULTIPLY</button>
+            <button onclick="doDivision()">DIVIDE</button>
+            <button onclick="doRemainder()">REMAINDER</button>
+            
+        </div>
+        <h2 id="response"></h2>
+    </div>
+    
     <script src="calc.js"></script>
     <script src="app.js"></script>
 </body>

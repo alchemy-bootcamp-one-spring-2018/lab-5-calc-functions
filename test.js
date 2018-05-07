@@ -2,6 +2,9 @@
 /* exported testRemainder */
 
 'use strict';
+function testInputExists() {
+    
+}
 
 function testAddition() {
     const result = addition(5, 6);
@@ -11,6 +14,7 @@ function testAddition() {
     else {
         console.log('testAddition - value - SUCCESS');
     }
+    
 }
 
 function testSubtraction() {
