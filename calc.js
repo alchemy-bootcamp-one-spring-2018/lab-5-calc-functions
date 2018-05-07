@@ -121,19 +121,19 @@ function isEven(x) {
     if(even === 0) {
         return {
             value: 'Yep!',
-            description: x + ' is even!'
+            description: x + ' is an even number!'
         };
     }
     else if(isNaN(even)) {
         return {
             value: 'Error!',
-            description: 'That doesn\'t appear to be a number! Please enter a number!'
+            description: 'That doesn\'t appear to be a number. Please enter a number!'
         };
     }
     else {
         return {
             value: 'No!',
-            description: x + ' is NOT even!'
+            description: x + ' is NOT an even number!'
         };
     }
 }
@@ -144,19 +144,19 @@ function isOdd(x) {
     if(odd === 1) {
         return {
             value: 'Yep!',
-            description: x + ' is odd!'
+            description: x + ' is an odd number!'
         };
     }
     else if(isNaN(odd)) {
         return {
             value: 'Error!',
-            description: 'That doesn\'t appear to be a number! Please enter a number!'
+            description: 'That doesn\'t appear to be a number. Please enter a number!'
         };
     }
     else {
         return {
             value: 'No!',
-            description: x + ' is NOT odd!'
+            description: x + ' is NOT an odd number!'
         };
     }
 }
