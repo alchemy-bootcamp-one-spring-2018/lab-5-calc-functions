@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Test</title>
+</head>
+<body>
+    <h1>A Calculator</h1>
+
+    <section>
+        <h3>Sum</h3>
+        Number to sum x:
+       <input id="number-to-sum-1" type="number">       
+        Number to sum y:
+        <input id="number-to-sum-2" type="number">
+        Sum total:
+        <span id="sum-total"></span>
+        <p id="sum-description"></p>
+        <button onclick="showSum()">Sum</button>
+    </section>
+
+    <section>
+        <h3>Subtract</h3>
+        Number to sub x:
+        <input id="number-to-sub-1" type="number">       
+        Number to sub y:
+        <input id="number-to-sub-2" type="number">
+        Result:
+        <span id="result"></span>
+        <p id="subtract-description"></p>
+        <button onclick="showResult()">Result</button>
+    </section>
+
+    <section>
+        <h3>Multiply</h3>
+        Factor x:
+        <input id="factor-1" type="number">       
+        Factor y:
+        <input id="factor-2" type="number">
+        Product:
+        <span id="product"></span>
+        <p id="multiply-description"></p>
+        <button onclick="showProdu()">Sum</button>
+
+        
+    </section>
+
+    <section>
+        <h3>Divide</h3>
+        Dividend:
+        <input id="Dividend" type="number">       
+        Divisor:
+        <input id="Divisor" type="number">
+        Quotient:
+        <span id="Quotient"></span>
+    </section>
+
+
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
