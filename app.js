@@ -2,15 +2,15 @@
 /* exported showRemainder */
 
 //Addition - function name is displayAddSum
-/*
+
 function displayAddSum() {
-    const x = parseInt(document.getElementById('dividend').value);
-    const y = parseInt(document.getElementById('divisor').value);
-    const result = remainder(x, y);
-    document.getElementById('remainder').textContent = result.value;
-    document.getElementById('remainder-description').textContent = result.description;
+    const x = parseInt(document.getElementById('addition-number-1').value);
+    const y = parseInt(document.getElementById('addition-number-2').value);
+    const result = getAddSum(x, y);
+    
+    document.getElementById('addition-result').textContent = result.description;
 }
-*/
+
 //Subtraction - function name is displaySubSum
 
 //Multiplication - function name is displayProduct
@@ -25,6 +25,4 @@ function displayRemainder() {
     const result = getRemainder(x, y);
 
     document.getElementById('remainder-description').textContent = result.description;
-
-
 }

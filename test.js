@@ -52,7 +52,6 @@ function testdisplayRemainder() {
     }
 }
   
-
 //entire test suite function
 testdisplayAddSum();
 testdisplaySubSum();

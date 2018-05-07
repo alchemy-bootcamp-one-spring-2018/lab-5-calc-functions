@@ -1,17 +1,17 @@
-/* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct
+/* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct getRemainder
 displayQuotient displayRemainder */
 
-/*
+
 
 //addition function
-function displayAddSum(x, y) {
+function getAddSum(x, y) {
     var additionSum = x + y;
   
     return {
         value: additionSum,
         description: x + ' plus ' + y + ' is: ' + additionSum };
 }
-
+/*
 //subtraction function
 function displaySubSum(x, y) {
     var subtractionSum = x - y;
