@@ -19,6 +19,4 @@ function subtract(x, y){
     return {
         value: difference
     };
-
-
 }
