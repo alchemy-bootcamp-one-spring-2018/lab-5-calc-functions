@@ -1,6 +1,6 @@
 # A Calculator
 
-A simple web app that adds, subtracts, multiplies and divides. I wrote it with HMTL, CSS and JavaScript.
+A simple web app that adds, subtracts, multiplies and divides. I wrote it with HTML, CSS and JavaScript.
 
 ## How to use:
 
