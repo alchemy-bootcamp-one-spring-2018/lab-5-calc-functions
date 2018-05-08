@@ -5,6 +5,14 @@
     padding: 25px;
 }
 
+#calc-pic {
+    width: 125px;
+    position: absolute;
+    right: 400px;
+    top: 20px;
+
+}
+
 body{
     color: whitesmoke;
 }

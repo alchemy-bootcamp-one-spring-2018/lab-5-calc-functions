@@ -28,7 +28,13 @@ function showProduct() {
 function showQuotient() {
     var x = parseInt(document.getElementById('dividend').value);
     var y = parseInt(document.getElementById('divisor').value);
-    var result = divide(x, y);
+    if(y === 0) {
+        alert('Are you trying to break the universe? You can\'t divide by zero!');
+        return;
+    }
+    else {
+        var result = divide(x, y);
+    }
     document.getElementById('quotient').innerHTML = result.value;
     document.getElementById('divide-description').innerHTML = result.description;
 
