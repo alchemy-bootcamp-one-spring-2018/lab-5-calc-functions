@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Tested Calc Functions</h1>
+    
+    <section>
+        <div>
+            <h2>Add</h2>
+            Num1: 
+            <input id="add_x" type="number">
+            + Num2:
+            <input id="add_y">
+            <button onclick="showAdd()">Add</button>
+            Result:
+            <span id="add_result">
+        </div>
+        <p id="add_description"></p>
+    </section>
+
+    <section>
+        <div>
+            <h2>Subtract</h2>
+            Num1:
+            <input id="subtract_x" type="number">
+            - Num2:
+            <input id="subtract_y">
+            <button onclick="showSubtract()">Subtract</button>
+            Result:
+            <span id="subtract_result"></span>
+        </div>
+        <p id="subtract_description"></p>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Multiply</h2>
+            Num1: 
+            <input id="multiply_x" type="number">
+            * Num2:
+            <input id="multiply_y">
+            <button onclick="showMultiply()">Multiply</button>
+            Result:
+            <span id="multiply_result">
+        </div>
+        <p id="multiply_description"></p>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Divide</h2>
+            Num1: 
+            <input id="divide_x" type="number">
+            / Num2:
+            <input id="divide_y">
+            <button onclick="showDivide()">Divide</button>
+            Result:
+            <span id="divide_result">
+        </div>
+        <p id="divide_description"></p>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Remainder</h2>
+            Num1: 
+            <input id="modulo_x" type="number">
+            % Num2:
+            <input id="modulo_y">
+            <button onclick="showModulo()">Remainder</button>
+            Result:
+            <span id="modulo_result">
+        </div>
+        <p id="modulo_description"></p>
+    </section>
+
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
