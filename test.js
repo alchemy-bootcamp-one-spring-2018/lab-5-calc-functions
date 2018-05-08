@@ -1,8 +1,8 @@
 // Test some shizz
 function testSum() {
-    const result = sum(29, 1);
+    const result = sum(29, 6);
     if(result.value !== 35) {
-        console.log('testSum - FAIL', result);
+        console.log('testSum - FAIL', result.value;
     }
     else {
         console.log('testSum - SUCCESS');
