@@ -1,45 +1,45 @@
 /* exported sum product minus divide remainder */
 function sum(x, y) {
-    const remainder = x + y;
+    const result = x + y;
 
     return {
-        value: remainder,
-        content: 'The reslut of ' + x + ' + ' + y + ' is ' + remainder
+        value: result,
+        content: 'The reslut of ' + x + ' + ' + y + ' is ' + result
     };
 }
 
 function product(x, y) {
-    const remainder = x * y;
+    const result = x * y;
 
     return {
-        value: remainder,
-        content: 'The reslut of ' + x + ' * ' + y + ' is ' + remainder
+        value: result,
+        content: 'The reslut of ' + x + ' * ' + y + ' is ' + result
     };
 }
 
 function minus(x, y) {
-    const remainder = x - y;
+    const result = x - y;
 
     return {
-        value: remainder,
-        content: 'The reslut of ' + x + ' - ' + y + ' is ' + remainder
+        value: result,
+        content: 'The reslut of ' + x + ' - ' + y + ' is ' + result
     };
 }
 
 function divide(x, y) {
-    const remainder = x / y;
+    const result = x / y;
 
     return {
-        value: remainder,
-        content: 'The reslut of ' + x + ' / ' + y + ' is ' + remainder
+        value: result,
+        content: 'The reslut of ' + x + ' / ' + y + ' is ' + result
     };
 }
 
 function remainder(x, y) {
-    const remainder = x % y;
+    const result = x % y;
 
     return {
-        value: remainder,
-        content: 'The reslut of ' + x + ' % ' + y + ' is ' + remainder
+        value: result,
+        content: 'The reslut of ' + x + ' % ' + y + ' is ' + result
     };
 }
