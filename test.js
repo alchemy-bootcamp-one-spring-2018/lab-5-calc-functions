@@ -57,9 +57,6 @@ function testDividedNum() {
 
 testDividedNum();
 
-//console.log('testTotalNum');
-//testTotalNum();
-
 
 
 
