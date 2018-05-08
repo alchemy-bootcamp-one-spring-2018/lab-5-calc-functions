@@ -60,7 +60,7 @@ function testDivide(){
 // testing even odd
 function testEven(){
     var result = quotient(6, 3);
-    if(result.value % 2 === 0 ){
+    if(result.value % 2 === 0) {
         console.log('testEven - value - EVEN');
     }
     else {
