@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MATH FUNCTIONS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>MATH FUNCTIONS</h1>
+
+    <section id="calculator">
+        <div id="user-inputs">
+            value-one:
+            <input id="first-value" type="number">
+            
+            value-two:
+            <input id="second-value" type="number">
+
+            result:
+            <span id="result"></span>
+        </div>
+
+        <div id="button-section">
+            <button class="buttons" onclick="showAddition()">Addition</button>
+            <button class="buttons" onclick="showSubtraction()">Subtraction</button>
+            <button class="buttons" onclick="showMultiplication()">Multiplication</button>
+            <button class="buttons" onclick="showDivision()">Division</button>
+            <button class="buttons" onclick="showRemainder()">Remainder</button>
+            <button class="buttons" onclick="showHypotenuse()">Hypotenuse</button>
+        </div>
+
+        <p id="calculation-description"></p> 
+
+    </section>
+
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
