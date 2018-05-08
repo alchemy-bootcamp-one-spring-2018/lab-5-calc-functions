@@ -1,4 +1,4 @@
-//This is your math file
+//This file holds all necessary calculation functions
 /* exported addNumbers subtractNumbers multiplyNumbers divideNumbers remainder hypotNumbers evenOdd*/
 
 function addNumbers(x, y){

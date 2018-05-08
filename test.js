@@ -1,4 +1,4 @@
-//This is your test file
+//This files holds all your unit testing for your calculation functions
 
 function testAdd(){
     var result = addNumbers(17, 13);

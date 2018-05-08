@@ -1,3 +1,4 @@
+//This page handles user interaction with index.html
 /* exported showSum showDifference showProduct showQuotient showHypot showEvenOdd*/
 
 function showSum() {
