@@ -60,3 +60,16 @@ function doOddOrEven() {
         printResult(result);
     }
 }
+
+function doPrimeNumber() {
+    var [x, y] = storeInput();
+    if(isNaN(x) === false && isNaN(y) === false) {
+        const xResult = primeNumber(x);
+        const yResult = primeNumber(y);
+        const result = {
+            value: xResult.value + ' - ' + yResult.value,
+            description: xResult.description + ' ' + yResult.description
+        };
+        printResult(result);
+    }
+}

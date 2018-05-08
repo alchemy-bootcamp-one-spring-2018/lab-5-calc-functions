@@ -104,6 +104,34 @@ function testPrimeNumber() {
     else {
         console.log('testPrimeNumber - 17 - SUCCESS');
     }
+    result = primeNumber(0);
+    if(result.value !== false) {
+        console.error('testPrimeNumber - 0 - FAIL');
+    }
+    else {
+        console.log('testPrimeNumber - 0 - SUCCESS');
+    }
+    result = primeNumber(1);
+    if(result.value !== false) {
+        console.error('testPrimeNumber - 1 - FAIL');
+    }
+    else {
+        console.log('testPrimeNumber - 1 - SUCCESS');
+    }
+    result = primeNumber(2);
+    if(result.value !== true) {
+        console.error('testPrimeNumber - 2 - FAIL');
+    }
+    else {
+        console.log('testPrimeNumber - 2 - SUCCESS');
+    }
+    result = primeNumber(-10);
+    if(result.value !== false) {
+        console.error('testPrimeNumber - -10 - FAIL');
+    }
+    else {
+        console.log('testPrimeNumber - -10 - SUCCESS');
+    }
 }
 testAddition();
 testSubtraction();

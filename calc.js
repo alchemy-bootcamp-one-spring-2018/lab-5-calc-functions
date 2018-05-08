@@ -82,13 +82,7 @@ function primeNumber(x) {
     if(x < 2) {
         return {
             value: false,
-            description: 'x is not a prime number.'
-        };
-    }
-    else if(Number.isInteger(x) === false) {
-        return {
-            value: false,
-            description: 'x is not a prime number.'
+            description: x + ' is not a prime number.'
         };
     }
     else {
@@ -96,13 +90,13 @@ function primeNumber(x) {
             if(i === x) {
                 return {
                     value: true,
-                    description: 'x is a prime number.'
+                    description: x + ' is a prime number.'
                 };
             }
             else if(x % i === 0) {
                 return {
                     value: false,
-                    description: 'x is not a prime number.'
+                    description: x + ' is not a prime number.'
                 };
             }
         }
