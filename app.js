@@ -1,3 +1,4 @@
+/* exported showAddition, showSubtraction, showMultiply, showDivision */
 'use strict';
 
 function showAddition() {
@@ -6,7 +7,7 @@ function showAddition() {
     var y = parseInt(document.getElementById('add2').value);
     result = x + y;
     document.getElementById('addEquals').textContent = result.value;
-    document.getElementById('add-description').textContent = result;
+    document.getElementById('add-description').textContent = x + ' plus ' + y + ' equals ' + result;
 }
 function showSubtraction() {
     var result;
@@ -14,7 +15,7 @@ function showSubtraction() {
     var y = parseInt(document.getElementById('subtract2').value);
     result = x - y;
     document.getElementById('subtractEquals').tectContent = result.value;
-    document.getElementById('subtract-description').textContent = result;
+    document.getElementById('subtract-description').textContent = x + ' minus ' + y + ' equals ' + result;
 }
 
 function showMultiply() {
@@ -23,7 +24,7 @@ function showMultiply() {
     var y = parseInt(document.getElementById('multiply2').value);
     result = x * y;
     document.getElementById('multiplyEquals').textContent = result.value;
-    document.getElementById('multiply-description').textContent = result;
+    document.getElementById('multiply-description').textContent = x + ' times ' + y + ' equals ' + result;
 }
 
 function showDivision() {
@@ -32,5 +33,5 @@ function showDivision() {
     var y = parseInt(document.getElementById('divide2').value);
     result = x / y;
     document.getElementById('divideEquals').textContent = result.value;
-    document.getElementById('divide-description').textContent = result;
+    document.getElementById('divide-description').textContent = x + ' divided by ' + y + ' equals ' + result;
 }

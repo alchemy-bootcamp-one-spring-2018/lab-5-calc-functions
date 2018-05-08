@@ -1,3 +1,4 @@
+/* exported addition, subtraction, multiplication, division */
 'use strict';
 
 

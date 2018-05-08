@@ -1,4 +1,6 @@
+/* global addition, subtraction, multiplication, division */
 'use strict';
+
 
 function testMyAddition() {
     var addResult = addition(4, 4);

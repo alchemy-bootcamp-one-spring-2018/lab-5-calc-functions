@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>Calculator App</title>
 </head>
+
 <body>
     <h2>My Calculator</h2>
 
     <section>
-        Add:
         <div>
+            Add:
             <input id="add1" type="number">
             +
             <input id="add2" type="number">
-            =
-            <span id="addEquals"></span> 
-        </div>
-        <div>
             <button onclick="showAddition()">add</button>
         </div>
-        <p id="add-description"></p>
+        <div>
+            <p id="add-description"></p>
+            <span id="addEquals"></span> 
+        </div>
+        
     </section>
 
     <section>
-        Subtract:
         <div>
+            Subtract:
             <input id="subtract1" type="number">
             -
             <input id="subtract2" type="number">
-            =
-            <span id="subtractEquals"></span>
-        </div>
-        <div>
             <button onclick="showSubtraction()">subtract</button>   
         </div>
-        <p id="subtract-description"></p>
+        <div>
+            <p id="subtract-description"></p>
+            <span id="subtractEquals"></span>
+        </div>    
     </section>
 
     <section>
@@ -45,13 +46,12 @@
             <input id="multiply1" type="number"> 
             * 
             <input id="multiply2" type="number">    
-            = 
-            <span id="multiplyEquals"></span>
+            <button onclick="showMultiply()">multiply</button> 
         </div>
         <div>
-            <button onclick="showMultiply()">multiply</button>
+            <p id="multiply-description"></p>
+            <span id="multiplyEquals"></span>
         </div>
-        <p id="multiply-description"></p>
     </section>
 
     <section>
@@ -60,13 +60,12 @@
             <input id="divide1" type="number">
             /
             <input id="divide2" type="number">
-            =
-            <span id="divideEquals"></span>
-        </div>
-        <div>
             <button onclick="showDivision()">divide</button>
         </div>
-        <p id="divide-description"></p>
+        <div>
+            <p id="divide-description"></p>
+            <span id="divideEquals"></span>
+        </div>
     </section>
 
     <script src = "calc.js"></script>
