@@ -1,18 +1,27 @@
 
-// shows remainder of the divided
 /*exported showSum*/
 /*exported showProduct*/
 
 function showSum() {
-    const sum = (x + y);
+    // const sum = (x + y);
     const x = parseInt(document.getElementById('number-static').value);
     const y = parseInt(document.getElementById('number-actor').value);
     const result = sum(x, y);
     document.getElementById('Sum').textContent = result.value;
     document.getElementById('sum-description').textContent = result.description;
-
+    
     console.log(result);
 }
+
+showSum();
+
+
+
+
+
+
+
+
 
 function showProduct() {
     const x = parseInt(document.getElementById('add-num').value);
@@ -22,6 +31,7 @@ function showProduct() {
     document.getElementById('Product-description');
 }
 
+// shows remainder of the divided
 function showRemainder() {
     const y = parseInt(document.getElementById('divisor').value);
     const x = parseInt(document.getElementById('dividend').value);
