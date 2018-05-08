@@ -35,6 +35,11 @@ function displayProduct() {
 function displayQuotient() {
     const x = parseInt(document.getElementById('division-number-1').value);
     const y = parseInt(document.getElementById('division-number-2').value);
+
+    if(y === 0){
+        alert('You cannot divide a number by zero. Please choose another number for Number 2.');
+    }
+    
     const result = getQuotient(x, y);
     
     document.getElementById('division-result').textContent = result.description;
@@ -44,6 +49,10 @@ function displayQuotient() {
 function displayRemainder() {
     var x = parseInt(document.getElementById('dividend').value);
     var y = parseInt(document.getElementById('divisor').value);
+
+    if(y === 0){
+        alert('You cannot divide a number by zero. Please choose another number for Number 2.');
+    }
     
     const result = getRemainder(x, y);
 
