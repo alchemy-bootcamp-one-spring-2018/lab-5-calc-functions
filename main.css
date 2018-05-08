@@ -1,0 +1,41 @@
+body {
+    background: red;
+    color: yellow;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 4em;
+}
+
+.calc-functions {
+    display: flex;
+    flex-direction: column;
+    width: 585.75px;
+}
+button {
+    background: blue;
+    color: yellow;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+
+}
+input {
+    font-size: 3em;
+}
+
+p {
+    font-size: 3em;
+}
+
+#result {
+    height: 48px;
+}
