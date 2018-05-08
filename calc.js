@@ -1,6 +1,6 @@
 /* exported sum product minus divide remainder */
 function sum(x, y) {
-    const result = x + y;
+    var result = x + y;
 
     return {
         value: result,
@@ -9,7 +9,7 @@ function sum(x, y) {
 }
 
 function product(x, y) {
-    const result = x * y;
+    var result = x * y;
 
     return {
         value: result,
@@ -18,7 +18,7 @@ function product(x, y) {
 }
 
 function minus(x, y) {
-    const result = x - y;
+    var result = x - y;
 
     return {
         value: result,
@@ -27,7 +27,7 @@ function minus(x, y) {
 }
 
 function divide(x, y) {
-    const result = x / y;
+    var result = x / y;
 
     return {
         value: result,
@@ -36,7 +36,7 @@ function divide(x, y) {
 }
 
 function remainder(x, y) {
-    const result = x % y;
+    var result = x % y;
 
     return {
         value: result,

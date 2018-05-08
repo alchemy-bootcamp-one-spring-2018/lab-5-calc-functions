@@ -1,4 +1,4 @@
-/* global showRemainder remainder */
+/* global showSum showProduct showMinus showDivide showRemainder */
 function showSum() {
     const x = parseInt(document.getElementById('x').value);
     const y = parseInt(document.getElementById('y').value);
