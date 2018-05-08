@@ -1,4 +1,4 @@
-/* globals displayAddSum displaySubSum displayProduct displayQuotient displayRemainder */
+/* globals getAddSum getSubSum getProduct getQuotient getRemainder */
 
 //values for test functions will be 21 and 5
 
