@@ -61,9 +61,14 @@ function divide() {
     
     document.getElementById('result').textContent = result.value;
     document.getElementById('result-message').textContent = result.description;
-
-    evenOrOdd(result.value);
+    if(x === 0 || y === 0){
+        console.log('divided by 0');
+    }
+    else {
+        evenOrOdd(result.value);
+    }
 }
+
 function evenOrOdd(isItEven) {
     if(isItEven % 2 === 0){
         document.getElementById('even-or-odd').textContent = isItEven + ' IS EVEN';
