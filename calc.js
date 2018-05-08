@@ -4,7 +4,7 @@ function remainder(x, y) {
     const remainder = x % y;
     return {
         value: remainder,
-        description: 'The remainder of ' + x + ' divided by ' + y + ' is: ' + remainder
+        description: 'The remainder of ' + x + ' and ' + y + ' is: ' + remainder
     };
 
 }
@@ -23,7 +23,7 @@ function subtract(x, y) {
 
     return {
         value: sum,
-        description: 'The result of ' + x + ' minus ' + y + ' is: ' + sum
+        description: 'The difference of ' + x + ' and ' + y + ' is: ' + sum
     };
 }
 
@@ -32,7 +32,7 @@ function multiply(x, y) {
 
     return {
         value: sum,
-        description: 'The product of ' + x + ' multiplied by ' + y + ' is: ' + sum
+        description: 'The product of ' + x + ' and ' + y + ' is: ' + sum
     };
 }
 
@@ -44,7 +44,7 @@ function divide(x, y) {
         const sum = x / y;
         return {
             value: sum,
-            description: 'The quotient of ' + x + ' divided by ' + y + ' is: ' + sum
+            description: 'The quotient of ' + x + ' and ' + y + ' is: ' + sum
         };
     }
 }
@@ -53,7 +53,7 @@ function hypotenuse(a, b) {
     const hypotenuse = Math.sqrt((a ** 2) + (b ** 2));   
     return {
         value: hypotenuse,
-        description: 'The hypotenuse of the right triangle is: ' + hypotenuse
+        description: 'The hypotenuse is: ' + hypotenuse
     };
    
 }
