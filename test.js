@@ -1,5 +1,5 @@
-/* global add, subtract, multiply, divide  */
-/* exported testSum, testDifference, testProduct, testQuotient, testRemainder */
+/* global add, subtract, multiply, divide, modulo  */
+/* exported testSum, testDifference, testProduct, testQuotient, testModulo */
 'use strict';
 
 // add
@@ -60,15 +60,15 @@ testQuotient();
 
 // remainder
 function testModulo() {
-    var resultRemainder = remainder(29, 6);
+    var resultRemainder = modulo(29, 6);
 
     if(resultRemainder.value !== 5) {
-        console.error('testRemainder - value - FAIL', resultRemainder.value);
+        console.error('testModulo - value - FAIL', resultRemainder.value);
     }
     else {
-        console.log('testRemainder - value - SUCCESS');
+        console.log('testModulo - value - SUCCESS');
     }
 }
 
 
-testRemainder();
+testModulo();

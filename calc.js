@@ -1,4 +1,4 @@
-/* exported add, subtract, multiply, divide */
+/* exported add, subtract, multiply, divide, modulo */
 'use strict';
 
 // add
@@ -48,5 +48,5 @@ function modulo(x, y) {
     return {
         value: remainder,
         description: 'The remainder of ' + x + ' and ' + y + ' is ' + remainder + '.'
-    }
+    };
 }

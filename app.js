@@ -1,5 +1,5 @@
-/* global add, subtract, multiply, divide */
-/* exported showAdd, showSubtract, showMultiply, showDivide */
+/* global add, subtract, multiply, divide, modulo */
+/* exported showAdd, showSubtract, showMultiply, showDivide, showModulo */
 'use strict';
 
 //show results of add()
@@ -45,7 +45,7 @@ function showDivide() {
     var y = parseInt(document.getElementById('divide_y').value);
     //stretch goal: throw an error when dividing by 0
     if(y === 0) {
-        alert('ERROR: You cannot divide a number by 0. Please hit refresh and enter a number greater than 0.')
+        alert('ERROR: You cannot divide a number by 0. Please hit refresh and enter a number greater than 0.');
     }
     //call divide()
     var result = divide(x, y);
