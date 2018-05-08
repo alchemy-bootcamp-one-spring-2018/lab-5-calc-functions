@@ -4,7 +4,7 @@
 
 //test for addition function
 function testdisplayAddSum() {
-    const result = displayAddSum(21, 5);
+    var result = getAddSum(21, 5);
     if(result.value !== 26) {
         console.error('testdisplayAddSum - value - FAIL', result.value);
     } else {
@@ -14,7 +14,7 @@ function testdisplayAddSum() {
 
 //test for subtraction function
 function testdisplaySubSum() {
-    const result = displaySubSum(21, 5);
+    const result = getSubSum(21, 5);
     if(result.value !== 16) {
         console.error('testdisplaySubSum - value - FAIL', result.value);
     } else {
@@ -24,7 +24,7 @@ function testdisplaySubSum() {
 
 //test for multiplication function
 function testdisplayProduct() {
-    const result = displayProduct(21, 5);
+    const result = getProduct(21, 5);
     if(result.value !== 105) {
         console.error('testdisplayProduct - value - FAIL', result.value);
     } else {
@@ -34,7 +34,7 @@ function testdisplayProduct() {
 
 //test for division function
 function testdisplayQuotient() {
-    const result = displayQuotient(21, 5);
+    const result = getQuotient(21, 5);
     if(result.value !== 4.2) {
         console.error('testdisplayQuotient - value - FAIL', result.value);
     } else {
@@ -44,7 +44,7 @@ function testdisplayQuotient() {
 
 //test for remainder function
 function testdisplayRemainder() {
-    const result = displayRemainder(29, 6);
+    const result = getRemainder(29, 6);
     if(result.value !== 5) {
         console.error('testdisplayRemainder - value - FAIL', result.value);
     } else {
