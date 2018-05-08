@@ -18,8 +18,8 @@
             <button onclick="showAdd()">Add</button>
             Result:
             <span id="add_result">
-            <!-- <p id="add_description"></p>     -->
         </div>
+        <p id="add_description"></p>
     </section>
 
     <section>
@@ -33,6 +33,7 @@
             Result:
             <span id="subtract_result"></span>
         </div>
+        <p id="subtract_description"></p>
     </section>
     
     <section>
@@ -45,8 +46,8 @@
             <button onclick="showMultiply()">Multiply</button>
             Result:
             <span id="multiply_result">
-            <!-- <p id="description"></p>     -->
         </div>
+        <p id="multiply_description"></p>
     </section>
     
     <section>
@@ -59,8 +60,22 @@
             <button onclick="showDivide()">Divide</button>
             Result:
             <span id="divide_result">
-            <!-- <p id="description"></p>     -->
         </div>
+        <p id="divide_description"></p>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Remainder</h2>
+            Num1: 
+            <input id="modulo_x" type="number">
+            % Num2:
+            <input id="modulo_y">
+            <button onclick="showModulo()">Remainder</button>
+            Result:
+            <span id="modulo_result">
+        </div>
+        <p id="modulo_description"></p>
     </section>
 
     <script src="calc.js"></script>

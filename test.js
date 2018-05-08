@@ -59,16 +59,16 @@ function testQuotient() {
 testQuotient();
 
 // remainder
-// function testRemainder() {
-//     var resultRemainder = remainder(29, 6);
+function testModulo() {
+    var resultRemainder = remainder(29, 6);
 
-//     if(resultRemainder.value !== 5) {
-//         console.error('testRemainder - value - FAIL', resultRemainder.value);
-//     }
-//     else {
-//         console.log('testRemainder - value - SUCCESS');
-//     }
-// }
+    if(resultRemainder.value !== 5) {
+        console.error('testRemainder - value - FAIL', resultRemainder.value);
+    }
+    else {
+        console.log('testRemainder - value - SUCCESS');
+    }
+}
 
 
-// testRemainder();
+testRemainder();
