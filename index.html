@@ -8,18 +8,71 @@
 </head>
 <body>
     <h1>Let's do sums math!</h1>
+    
     <section>
+            <h2>Add two numbers:</h2>
         <div>
             Starting number:
             <input id="starting-number" type="number">
             Number to add:
             <input id="number-to-add" type="number">
-            Add it up!:
+            Answer:
             <button onclick="totalNum()"></button> 
         </div>
-        <p id="result-description"></p>
-        <p id="total-num"></p>
         <p id="sum-description"></p>
+        <p id="total-num"></p>
+        <p id="result-description"></p>
+    </section>
+    <hr>
+
+    <section>
+            <h2>Subtract two numbers:</h2>
+        <div>
+            Starting number:
+            <input id="number-subtract-from" type="number">
+            Number to subtract:
+            <input id="number-to-subtract" type="number">
+            Answer:
+            <button onclick="subtractNum()"></button> 
+        </div>
+        <p id="subtract-num"></p>
+        <p id="subtract-description"></p>
+        
+    </section>
+    <hr>    
+
+    <section>
+            <h2>Multiply two numbers:</h2>
+        <div>
+            Starting number:
+            <input id="number-to-multiply" type="number">
+            Number to multiply:
+            <input id="number-multiply-by" type="number">
+            Answer:
+            <button onclick="multiplyNum()"></button> 
+        </div>
+        <p id="multiply-num"></p>
+        <p id="multiply-description"></p>
+        
+    </section>
+    <hr>
+    
+    <section>
+            <h2>Divide two numbers:</h2>
+        <div>
+            Starting number (dividend):
+            <input id="dividend" type="number">
+            Number to divide (divisor):
+            <input id="divisor" type="number">        
+            Answer: 
+            <button onclick="divideNum()"></button> 
+        </div>
+        <div>
+        </div>
+        
+        <p id="divide-num"></p>
+        <p id="divide-description"></p>
+        
     </section>
 
     <script src="calc.js"></script>    
