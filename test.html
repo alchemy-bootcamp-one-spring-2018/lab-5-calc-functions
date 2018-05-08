@@ -21,27 +21,54 @@
         <div>
             <button onclick="showAddition()">add</button>
         </div>
-            <p id="add-description"></p>
+        <p id="add-description"></p>
+    </section>
+
+    <section>
+        Subtract:
+        <div>
+            <input id="subtract1" type="number">
+            -
+            <input id="subtract2" type="number">
+            =
+            <span id="subtractEquals"></span>
+        </div>
+        <div>
+            <button onclick="showSubtraction()">subtract</button>   
+        </div>
+        <p id="subtract-description"></p>
     </section>
 
     <section>
         <div>   
             Multiply:
-            <input id="multiply" type="number"> 
-            X 
-            <input id="multiplyBy" type="number">    
+            <input id="multiply1" type="number"> 
+            * 
+            <input id="multiply2" type="number">    
             = 
             <span id="multiplyEquals"></span>
         </div>
         <div>
             <button onclick="showMultiply()">multiply</button>
         </div>
-            <p id="multiply-description"></p>
+        <p id="multiply-description"></p>
     </section>
 
+    <section>
+        <div>
+            Divide:
+            <input id="divide1" type="number">
+            /
+            <input id="divide2" type="number">
+            =
+            <span id="divideEquals"></span>
+        </div>
+        <div>
+            <button onclick="showDivision()">divide</button>
+        </div>
+        <p id="divide-description"></p>
+    </section>
 
-
-    
     <script src = "test.js"></script>
     <script src = "app.js"></script> 
     
