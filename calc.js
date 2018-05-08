@@ -25,7 +25,7 @@ function product(x , y){
 }
 
 function quotient(x , y){
-    var quotient = x % y;
+    var quotient = x / y;
     return {
         value: quotient,
         description: ('The quotient of ' + x + ' and ' + y + ' is ' + quotient)

@@ -31,8 +31,3 @@ function showQuotient() {
     document.getElementById('quotient').textContent =result.value;
     document.getElementById('divide-description').textContent = result.description;
 }
-
-showQuotient();
-showProduct();
-showDifference();
-showSum();

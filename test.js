@@ -32,7 +32,7 @@ function testProduct() {
 }
 
 function testQuotient() {
-    const result = quotient(4 % 2);
+    const result = quotient(4 / 2);
     if(result.value !== 2) {
         console.error('testQuotient - value - FAIL' , result.value);
     }
