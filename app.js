@@ -1,13 +1,13 @@
 
-/*exported showSum*/
+/*exported showSum sum */
 /*exported showProduct*/
+/* globals sum */
 
 function showSum() {
-    // const sum = (x + y);
     const x = parseInt(document.getElementById('number-static').value);
     const y = parseInt(document.getElementById('number-actor').value);
     const result = sum(x, y);
-    document.getElementById('Sum').textContent = result.value;
+    document.getElementById('sum').textContent = result.value;
     document.getElementById('sum-description').textContent = result.description;
     
     console.log(result);

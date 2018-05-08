@@ -1,5 +1,6 @@
 /* exported remainder*/
 /* exported sum*/
+
 function sum(x, y) {
     const sum = x + y;
 
@@ -8,6 +9,11 @@ function sum(x, y) {
         description: 'The sum of ' + x + 'divided by ' + y + 'is: ' + sum
     };
 }
+
+
+
+
+
 
 function remainder(x, y) {
     const remainder = x % y;
