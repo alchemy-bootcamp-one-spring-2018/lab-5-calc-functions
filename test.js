@@ -1,5 +1,5 @@
-/* globals remainder add subtract multiply divide */
-/* exported testRemainder addition subtraction multiplication division*/
+/* globals remainder add subtract multiply divide hypotenuse */
+/* exported testRemainder addition subtraction multiplication division */
 // AC #3 function return remainder
 
 function testRemainder() {
@@ -62,3 +62,14 @@ function division() {
 
 division();
 
+function testHypotenuse() {
+    const result = hypotenuse(4, 3);
+    if(result.value !== 5) {
+        console.error('hypotenuse - value - FAIL');
+    }
+    else {
+        console.log('hypotenuse - value - SUCCESS');
+    }
+}
+
+testHypotenuse();
