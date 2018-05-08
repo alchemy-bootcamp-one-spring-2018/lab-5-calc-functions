@@ -1,5 +1,7 @@
-/* globals getRemainder */
-/* exported showRemainder */
+/* globals getRemainder getAddSum getProduct getSubSum getQuotient */
+
+/* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct getRemainder getSubSum getProduct getAddSum getQuotient
+displayQuotient displayRemainder */
 
 //Addition - function name is displayAddSum
 
@@ -21,8 +23,22 @@ function displaySubSum() {
 }
 
 //Multiplication - function name is displayProduct
+function displayProduct() {
+    const x = parseInt(document.getElementById('multiplication-number-1').value);
+    const y = parseInt(document.getElementById('multiplication-number-2').value);
+    const result = getProduct(x, y);
+    
+    document.getElementById('multiplication-result').textContent = result.description;
+}
 
 //Division - function name is displayQuotient
+function displayQuotient() {
+    const x = parseInt(document.getElementById('division-number-1').value);
+    const y = parseInt(document.getElementById('division-number-2').value);
+    const result = getQuotient(x, y);
+    
+    document.getElementById('division-result').textContent = result.description;
+}
 
 //Remainder - function name is displayRemainder
 function displayRemainder() {

@@ -1,4 +1,4 @@
-/* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct getRemainder
+/* exported additionSum subtractionSum sum product quotient AdditionSum displayAddSum displaySubSum remainder displayProduct getRemainder getSubSum getProduct getAddSum getQuotient
 displayQuotient displayRemainder */
 
 //addition function
@@ -18,9 +18,9 @@ function getSubSum(x, y) {
         value: subtractionSum,
         description: x + ' minus ' + y + ' is: ' + subtractionSum };
 }
-/*
+
 //multiplication function
-function displayProduct(x, y) {
+function getProduct(x, y) {
     var product = x * y;
   
     return {
@@ -30,7 +30,7 @@ function displayProduct(x, y) {
 }
 
 //division function
-function displayQuotient(x, y) {
+function getQuotient(x, y) {
     var quotient = x / y;
   
     return {
@@ -38,7 +38,7 @@ function displayQuotient(x, y) {
         description: x + ' divided by ' + y + ' is: ' + quotient
     };
 }
-*/
+
 //remainder function
 function getRemainder(x, y) {
     var remainder = x % y;

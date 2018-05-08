@@ -1,4 +1,4 @@
-/* exported displayAddSum */
+/* globals displayAddSum displaySubSum displayProduct displayQuotient displayRemainder */
 
 //values for test functions will be 21 and 5
 
