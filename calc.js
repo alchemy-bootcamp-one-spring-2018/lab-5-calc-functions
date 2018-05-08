@@ -1,19 +1,28 @@
 'use strict';
 
-function showAddition() {
-    var result;
-    var x = parseInt(document.getElementById('add1').value);
-    var y = parseInt(document.getElementById('add2').value);
-    result = x + y;
-    document.getElementById('addEquals').textContent = result.value;
-    document.getElementById('add-description').textContent = result;
+
+function addition(x, y) {
+    return x + y;
 }
 
-function showMultiply() {
-    var result;
-    var x = parseInt(document.getElementById('multiply').value);
-    var y = parseInt(document.getElementById('multiplyBy').value);
-    result = x * y;
-    document.getElementById('multiplyEquals').textContent = result.value;
-    document.getElementById('multiply-description').textContent = result;
+function subtraction(x, y) {
+    return x - y;
 }
+
+function multiplication(x, y) {
+    return x * y;
+}
+
+function division(x, y) {
+    return x / y;
+}
+
+
+
+
+
+
+
+
+
+

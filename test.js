@@ -1,52 +1,69 @@
 'use strict';
 
-function showAddition() {
-    var result;
-    var x = parseInt(document.getElementById('add1').value);
-    var y = parseInt(document.getElementById('add2').value);
-    result = x + y;
-    document.getElementById('addEquals').textContent = result.value;
-    document.getElementById('add-description').textContent = result;
-    console.log(x);
-    console.log(y);
-    console.log(x + y);
-}
+function testMyAddition() {
+    var addResult = addition(4, 4);
 
-function showSubtraction() {
-    var result;
-    var x = parseInt(document.getElementById('subtract1').value);
-    var y = parseInt(document.getElementById('subtract2').value);
-    result = x - y;
-    document.getElementById('subtractEquals').tectContent = result.value;
-    document.getElementById('subtract-description').textContent = result;
-    console.log(x);
-    console.log(y);
-    console.log(x - y);
+    if(addResult !== 8) {
+        console.log('testMyAddition fail');
+    }
+    else {
+        console.log('testMyAddition success');
+    }
 }
+testMyAddition();
 
-function showMultiply() {
-    var result;
-    var x = parseInt(document.getElementById('multiply1').value);
-    var y = parseInt(document.getElementById('multiply2').value);
-    result = x * y;
-    document.getElementById('multiplyEquals').textContent = result.value;
-    document.getElementById('multiply-description').textContent = result;
-    console.log(x);
-    console.log(y);
-    console.log(x * y);
-}
 
-function showDivision() {
-    var result;
-    var x = parseInt(document.getElementById('divide1').value);
-    var y = parseInt(document.getElementById('divide2').value);
-    result = x / y;
-    document.getElementById('divideEquals').textContent = result.value;
-    document.getElementById('divide-description').textContent = result;
-    console.log(x);
-    console.log(y);
-    console.log(x / y);
+function testMySubtraction() {
+    var subtractResult = subtraction(17, 6);
+
+    if(subtractResult !== 11) {
+        console.log('testMySubtraction fail');
+    }
+    else {
+        console.log('testMySubtraction success');
+    }
 }
+testMySubtraction();
+
+
+function testMyMultiplication() {
+    var multiplyResult = multiplication(3, 7);
+
+    if(multiplyResult !== 21) {
+        console.log('testMyMultiplication fail');
+    }
+    else {
+        console.log('testMyMultiplication success');
+    }
+}
+testMyMultiplication();
+
+
+function testMyDivision() {
+    var divideResult = division(30, 5);
+
+    if(divideResult !== 6) {
+        console.log('testMyDivision fail');
+    }
+    else {
+        console.log('testMyDivision success');
+    }
+}
+testMyDivision();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
