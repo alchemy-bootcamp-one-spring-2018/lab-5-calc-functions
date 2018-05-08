@@ -4,7 +4,7 @@ function testTotalNum() {
     var result = addition(3, 4);
 
     if(result !== 7) {
-        console.error('ERROR!');
+        console.error('ADDITION ERROR!');
     }
     else {
         console.log('SUCCESS!');
@@ -19,7 +19,7 @@ function testDifferenceNum() {
     var result = subtraction(5, 4);
 
     if(result !== 1) {
-        console.error('ERROR!');
+        console.error('SUBTRACTION ERROR!');
     }
     else {
         console.log('SUCCESS!');
@@ -34,7 +34,7 @@ function testMultiplyNum() {
     var result = multiply(5, 4);
 
     if(result !== 20) {
-        console.error('ERROR!');
+        console.error('MULTIPLICATION ERROR!');
     }
     else {
         console.log('SUCCESS!');
@@ -48,7 +48,7 @@ function testDividedNum() {
     var result = divide(4, 2);
 
     if(result !== 2) {
-        console.error('ERROR');    
+        console.error('DIVISION ERROR');    
     }
     else {
         console.log('SUCCESS!');

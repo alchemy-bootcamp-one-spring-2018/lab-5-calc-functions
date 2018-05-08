@@ -8,7 +8,7 @@ function totalNum() {
 
     console.log(result);
     
-    document.getElementById('sum-description').textContent = result.description;
+    document.getElementById('sum-description').textContent = result;
     document.getElementById('total-num').textContent = 'The sum of ' + x + ' and ' + y + ' is ' + result + '!';
     console.log(result);
 }
@@ -22,7 +22,7 @@ function subtractNum() {
 
     console.log(result);
     
-    document.getElementById('sum-description').textContent = result.description;
+    document.getElementById('sum-description').textContent = result;
     document.getElementById('subtract-num').textContent = 'The difference of ' + x + ' divided by ' + y + ' is ' + result + '!';
     console.log(result);
 }
@@ -36,7 +36,7 @@ function multiplyNum() {
 
     console.log(result);
     
-    document.getElementById('sum-description').textContent = result.description;
+    document.getElementById('sum-description').textContent = result;
     document.getElementById('multiply-num').textContent = x + ' multiplied by ' + y + ' is ' + result + '!';
     console.log(result);
 }
@@ -49,7 +49,7 @@ function divideNum() {
      
     console.log(result);
     
-    document.getElementById('divide-description').textContent = result.description;
+    document.getElementById('divide-description').textContent = result;
     document.getElementById('divide-num').textContent = x + ' divided by ' + y + ' is ' + result + '!';
     console.log(result);
 }
