@@ -1,3 +1,7 @@
+body {
+    background: gray;
+}
+
 input {
     width: 333px;
 }
@@ -7,5 +11,9 @@ h1 {
 }
 
 #results {
+    font-size: 2rem;
+}
+
+#text {
     font-size: 2rem;
 }
