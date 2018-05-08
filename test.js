@@ -2,6 +2,7 @@
 function testSum() {
     const result = sum(29, 1);
     if(result.value !== 35) {
+        console.log('testSum - FAIL', result);
     }
     else {
         console.log('testSum - SUCCESS');
