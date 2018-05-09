@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <h1 id="test">Test Driven</h1>
+    <body>
+        <section>
+            <div id="instruction-button">
+                <h3>Press a button to run your function!</h3>
+            </div>
+            <div id="boxes">
+                Number:
+                <input type="text" id="number-static">
+                by:
+                <input type="text" id="number-actor">
+            </div>
+            <p id='result'></p>
+            <p id='result-description'></p>
+        </section>
+        
+
+        <section>
+            <span id="buttons">
+                <button onclick="showSum()">Add</button>
+                <button onclick="showDiff()">Subtract</button>
+                <button onclick="showProduct()">Multiply</button>
+                <button onclick="showQuotient()">Divide</button>
+            </span>
+        </section>
+        
+        <script src="calc.js"></script>
+        <script src="test.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
