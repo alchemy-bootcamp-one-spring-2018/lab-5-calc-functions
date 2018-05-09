@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Addition!</h2>
+        <input id = 'first-add' type="number" onfocus="this.value=''"> +
+        <input id = 'second-add' type="number" onfocus="this.value=''">
+        <button id = 'add' onclick="showSum()">Add them!</button>
+        <p id = 'sum'></p>
+    </section>
+    <section>
+        <h2>Subtraction!</h2>
+        <input id = 'first-sub' type="number" onfocus="this.value=''"> -
+        <input id = 'second-sub' type="number" onfocus="this.value=''">
+        <button id = 'subtract' onclick="showDifference()">Subtract them!</button>
+        <p id = 'difference'></p>
+    </section>
+    <section>
+        <h2>Multiply!</h2>
+        <input id = 'multiplicand' type='number' onfocus="this.value=''"> x
+        <input id = 'multiplier' type='number' onfocus="this.value=''">
+        <button id = 'multiply' onclick = "showProduct()">Multiply them!</button>
+        <p id = 'product'></p>
+    </section>
+    <section>
+        <h2>Divide!</h2>
+        <input id='dividend' type="number" onfocus="this.value=''"> /
+        <input id='divisor' type="number" onfocus="this.value=''">
+        <button id='calculate' onclick="showQuotient()">Divide them!</button>
+        <p id='quotient'></p>
+    </section>
+    <section>
+        <h2>Let's find the hypotenuse!</h2>
+        First side:<input id='first-leg' type="number" onfocus="this.value=''">
+        Second side:<input id='second-leg' type="number" onfocus="this.value=''">
+        <button id='hypot' onclick="showHypot()">Hypotenuse!</button>
+        <p id='hypotenuse'></p>
+    </section>
+    <section>
+        <h2>Is this number even or odd?</h2>
+        <input id='even-odd-input' type='number' onfocus="this.value=''">
+        <button id='even-odd-button' onclick='showEvenOdd()'>Let's see!</button>
+        <p id='even-odd-display'></p>
+    </section>
+    <section>
+        <h2>Is this a prime number?</h2>
+        <input id='prime-input' type='number' onfocus="this.value=''">
+        <button id = 'prime-button' onclick = 'showPrime()'>Is it prime?</button>
+        <p id = 'prime-display'></p>
+    </section>
+    <script src='calc.js'></script>
+    <script src ='app.js'></script>
+</body>
+</html>
