@@ -1,6 +1,9 @@
-/* globals add subtract */
+/* globals add subtract multiply divide */
 /* exported showSum */
 /* exported showDifference */
+/* exported showProduct */
+/* exported showQuotient */
+
 console.log('Test.js');
 
 function showSum() {
@@ -24,3 +27,25 @@ function showDifference() {
 }
 
 showDifference();
+
+function showProduct() {
+    const result = multiply(7, 3);
+    if(result.value !== 21) {
+        console.error('testProduct - value - FAIL', result.value);
+    } else {
+        console.log('testProduct - value - SUCCESS');
+    }
+}
+
+showProduct();
+
+function showQuotient() {
+    const result = divide(6, 3);
+    if(result.value !== 2) {
+        console.error('testQuotient - value - FAIL', result.value);
+    } else {
+        console.log('testQuotient - value - SUCCESS');
+    }
+}
+
+showQuotient();
