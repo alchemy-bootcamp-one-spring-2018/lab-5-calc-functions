@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- html file that loads the app (`app.js`) plus the calculation functions (`calc.js`) -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <h2>Addition</h2>
+    <h3><input type="number" id="add1"> + <input type="number" id="add2"> = <span id="addResult"></span></h3>
+    <button onclick="doAddition()">Add!</button>
+    <h3 id="addDescription"></h3>
+
+    <h2>Subtraction</h2>
+    <h3><input type="number" id="subtract1"> - <input type="number" id="subtract2"> = <span id="subtractResult"></span></h3>
+    <button onclick="doSubtraction()">Subtract!</button>
+    <h3 id="subtractDescription"></h3>
+
+    <h2>Multiplication</h2>
+    <h3><input type="number" id="multiply1"> x <input type="number" id="multiply2"> = <span id="multiplyResult"></span></h3>
+    <button onclick="doMultiplication()">Multiply!</button>
+    <h3 id="multiplyDescription"></h3>
+
+    <h2>Division</h2>
+    <h3><input type="number" id="divide1"> / <input type="number" id="divide2"> = <span id="divideResult"></span></h3>
+    <button onclick="doDivision()">Divide!</button>  <button onclick="doDivisionWithRemainder()">Divide with Remainder!</button>
+    <h3 id="divideDescription"></h3>
+
+    <script src="app.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
