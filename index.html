@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+    <h1>Do Math Functions Everybody!</h1>
+
+    <section>
+      <h2>Add Function</h2>
+      <div>
+        FirstNum:
+        <input id="AddNum1" type="number">
+        + SecondNum:
+        <input id="AddNum2" type="number">
+        Sum= 
+        <span id="Sum"></span>
+      </div>
+      <div>
+        <button onclick="showSum()">Add it Up</button>
+      </div>
+      <p id="sum-description"></p>
+    </section>
+
+    <section>
+        <h2>Subtract Function</h2>
+        <div>
+          FirstNum:
+          <input id="SubtractNum1" type="number">
+          - SecondNum:
+          <input id="SubtractNum2" type="number">
+          Difference= 
+          <span id="Difference"></span>
+        </div>
+        <div>
+          <button onclick="showDifference()">Get the Difference</button>
+        </div>
+        <p id="difference-description"></p>
+      </section>
+
+    <section>
+        <h2>Multiply  Function</h2>
+        <div>            
+            FirstNum:
+            <input id="MultiplyNum1" type="number">
+            * SecondNum:
+            <input id="MultiplyNum2" type="number">
+            Product= 
+            <span id="Product"></span>
+        </div>
+        <div>
+            <button onclick="showProduct()">Get the Product</button>
+        </div>
+        <p id="product-description"></p>
+        </section>
+      
+    <section>
+        <h2>Divide  Function</h2>
+        <div>            
+            FirstNum:
+            <input id="Dividend" type="number">
+            / SecondNum:
+            <input id="Divisor" type="number">
+            Quotient= 
+            <span id="Quotient"></span>
+        </div>
+        <div>
+            <button onclick="showQuotient()">Get the Quotient</button>
+        </div>
+        <p id="quotient-description"></p>
+        </section>    
+
+  <script src="calc.js"></script>
+  <script src="app.js"></script> 
+</body>
+</html>
