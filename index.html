@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Calc App: Algebraic!</title>
+</head>
+<body>
+    <h1>Mathematical Functions</h1>
+<!-- Addition -->
+    <section>
+        <div>
+          Addend 1:
+          <input id="addend-1" type="number">
+          Addend 2:
+          <input id="addend-2" type="number">
+          Sum = 
+          <span id="sum"></span>
+        </div>
+        <div>
+          <button onclick="showSum()">Calculate!</button>
+        </div>
+        <p id="sum-description"></p>
+    </section>
+
+<!-- Subtraction -->
+    <section>
+        <div>
+        Minuend:
+        <input id="minuend" type="number">
+        Subtrahend:
+        <input id="subtrahend" type="number">
+        Difference = 
+        <span id="difference"></span>
+        </div>
+        <div>
+        <button onclick="showDifference()">Calculate!</button>
+        </div>
+        <p id="sub-description"></p>
+    </section>
+
+<!-- Multiplication -->
+    <section>
+            <div>
+            Multiplicand:
+            <input id="multiplicand" type="number">
+            Multiplier:
+            <input id="multiplier" type="number">
+            Product = 
+            <span id="product"></span>
+            </div>
+            <div>
+            <button onclick="showProduct()">Calculate!</button>
+            </div>
+            <p id="product-description"></p>
+        </section>
+
+
+  <!-- Division -->
+    <section>
+        <div>
+          Dividend:
+          <input id="dividend" type="number">
+          Divisor:
+          <input id="divisor" type="number">
+          Quotient = 
+          <span id="quotient"></span>
+        </div>
+        <div>
+          <button onclick="showQuotient()">Calculate!</button>
+        </div>
+        <p id="quotient-description"></p>
+    </section>
+  
+
+</body>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</div>
+</html>
