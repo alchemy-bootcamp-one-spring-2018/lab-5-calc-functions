@@ -1,0 +1,31 @@
+body {
+    background-color: cadetblue;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgb(176, 196, 231);
+    font-weight: bold;   
+}
+
+p {
+    text-decoration-line: underline;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80px;
+    padding: 4px;
+    font-size: 18px;
+}
+
+button {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(238, 174, 14);
+    background: transparent;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
