@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Do Some Math!</title>
+</head>
+<body>
+    <h1>Fun with Basic Math</h1>
+    
+    <section id = "input-fields">
+        
+        <div>
+            <h2>Addition</h2>
+                Number 1:
+                <input id="addition-number-1">
+                Number 2:
+                <input id="addition-number-2">
+                <button onclick="displayAddSum()">Calculate it!</button>
+                <div>
+                Result:
+                <span id="addition-result"></span>
+                </div>
+        </div>
+
+        <div>
+            <h2>Subtraction</h2>
+                Number 1:
+                <input id="subtraction-number-1">
+                Number 2:
+                <input id="subtraction-number-2">
+                <button onclick="displaySubSum()">Calculate it!</button>
+                <div>
+                Result:
+                <span id="subtraction-result"></span>
+                </div>
+        </div>
+
+        <div>
+            <h2>Multiplication</h2>
+                Number 1:
+                <input id="multiplication-number-1">
+                Number 2:
+                <input id="multiplication-number-2">
+                <button onclick="displayProduct()">Calculate it!</button>
+                <div>
+                Result:
+                <span id="multiplication-result"></span>
+                </div>
+                </div>
+
+        <div>
+                        
+            <h2>Division</h2>
+                Number 1:
+                <input id="division-number-1">
+                Number 2:
+                <input id="division-number-2">
+                <button onclick="displayQuotient()">Calculate it!</button>
+                <div>
+                Result:
+                <span id="division-result"></span>
+                </div>
+        </div>
+        
+        <div>
+            <h2>Division with Remainder</h2>
+              Dividend:
+              <input id="dividend">
+              Divisor:
+              <input id="divisor">
+              <button onclick="displayRemainder()">Calculate it!</button>
+              <div>Result:
+              <span id="remainder-description"></span>
+            </div>
+              
+        </div>
+
+      </section>
+    <script src="calc.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
